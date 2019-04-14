@@ -1,0 +1,29 @@
+.overlay
+    position: fixed
+    top: 0
+    width: 100%
+    height: 100%
+    background-color: rgba(0, 0, 0, 0.4)
+    display: none
+    z-index: 3
+    &-popup
+       position: fixed
+       z-index: 4 
+       top: 345px
+       left: 559px
+       max-width: 280px 
+       word-wrap: break-word
+    &-popup-close
+        position: relative
+        top: -243px
+        left: 285px
+        cursor: pointer
+        width: 15px
+    &-popup-close:focus
+        outline: none  
+    &-text
+        position: relative
+        color: black
+        top: -178px
+        left: 22px
+
