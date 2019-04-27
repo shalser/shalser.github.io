@@ -6,6 +6,9 @@
 }
 
 @media (max-width: 1470px) {
+  ul.menu-adaptive {
+    display: none;
+  }
   nav ul li {
     font-size: 24px;
     padding: 41px;
@@ -13,6 +16,9 @@
 }
 
 @media (max-width: 1378px) {
+  ul.menu-adaptive {
+    display: none;
+  }
   nav ul li {
     font-size: 24px;
     padding: 41px;
@@ -29,6 +35,9 @@
 }
 
 @media (max-width: 1250px) {
+  ul.menu-adaptive {
+    display: none;
+  }
   nav ul li {
     font-size: 24px;
     padding: 41px;
@@ -54,6 +63,9 @@
 }
 
 @media (max-width: 730px) {
+  ul.menu-adaptive {
+    display: none;
+  }
   nav ul li {
     font-size: 35px;
     padding: 41px;
@@ -116,7 +128,7 @@
     width: 491px;
     height: 183px;
     font-size: 40px;
-    font-weight: 400px;
+    font-weight: 400;
     line-height: 42px;
   }
   div.form-mail {
