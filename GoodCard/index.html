@@ -1,0 +1,841 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>Good-card</title>
+
+  <!-- Подключаем API Yandex maps -->
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=<ваш API-ключ>" type="text/javascript"></script>
+  <!-- Подключаем анимацию -->
+  <link rel="stylesheet" media="all" href="build/css/animate.css">
+  <link rel="stylesheet" media="all" href="build/css/main.css" />
+</head>
+
+<body>
+
+  <!-- popup-w320 -->
+
+
+  <div class="popup-w320" id="popup-w320">
+    <div class="popup-w320__close" id="popup-w320__close"> &times;</div>
+    <form action="#" class="main-form">
+      <div class="popup-w320-header">Получите индивидуальное предложение
+        <span>на производство и поставку изделий</span>
+        <label for="phone" class="popup-w320__label">
+          Введите ваш номер телефона:
+        </label>
+        <input type="tel" class="popup-w320__input" name="phone" placeholder="+7 (ХХХ) ХХХ-ХХ-ХХ" required>
+        <button class="button popup-w320__btn">
+          Оставить заявку!
+        </button>
+        <div class="popup-w320__note">
+          *Минимальный заказ 500шт
+        </div>
+      </div>
+    </form>
+  </div>
+
+  <!-- /popup-w320 -->
+
+
+  <!-- header w320 -->
+
+  <header class="header-w320">
+    <div class="overlay-w320" id="overlay-w320"><img src="build/images/320/main-bg-overlay.png" alt=""></div>
+    <div class="container-w320-header">
+
+      <nav class="header-w320-nav" id='nav-w320'>
+        <ul id="menu-w320">
+
+          <li>
+            <div class="fon-underText-w320"></div><a href="#">О компании</a>
+          </li>
+
+          <li><a href="#triggers">Преимущества</a></li>
+
+          <li><a href="#triggers">Производство</a></li>
+
+          <li><a href="#triggers">Склад</a></li>
+
+          <li><a href="#product">Продукция</a></li>
+
+          <li><a href="#clients">Наши клиенты</a></li>
+
+          <li><a href="#reviews">Сертификаты</a></li>
+
+          <li><a href="#reviews">Отзывы</a></li>
+
+          <li><a href="#footer">Контакты</a></li>
+
+        </ul>
+      </nav>
+      <div class="header-w320-logo"><img src="build/images/320/main-logo.png" alt="logo"></div>
+      <div class="header-w320-phones">
+        <div class="phone-1-w320">8 (347) 271 54 28</div>
+        <div class="phone-2-w320">8 (937) 363 30 00</div>
+      </div>
+      <div class="header-w320-logo-tel" id="tel-w320"><img src="build/images/320/header-logo-tel.png" alt=""></div>
+    </div>
+  </header>
+
+  <!-- /header w320 -->
+
+  <!-- container-header-w768 -->
+
+  <div class="container-header-w768">
+    <nav class="header-nav-w768" id='nav-w768'>
+      <ul id="menu-w768">
+
+        <li>
+          <div class="fon-underText-w768"></div><a href="#">О компании</a>
+        </li>
+
+        <li><a href="#triggers">Преимущества</a></li>
+
+        <li><a href="#triggers">Производство</a></li>
+
+        <li><a href="#triggers">Склад</a></li>
+
+        <li><a href="#product">Продукция</a></li>
+
+        <li><a href="#clients">Наши клиенты</a></li>
+
+        <li><a href="#reviews">Сертификаты</a></li>
+
+        <li><a href="#reviews">Отзывы</a></li>
+
+        <li><a href="#footer">Контакты</a></li>
+
+      </ul>
+    </nav>
+  </div>
+
+  <!-- /.container-header-w768 -->
+
+  <!-- Модальное окно "Форма обратной связи" -->
+  <div class="overlay" id="overlay">
+    <div class="popup">
+      <div class="popup-title">Форма обратной связи</div>
+      <div class="popup-close" id="popup-close"> &times;</div>
+      <!-- /.popup-close -->
+      <div class="popup-form">
+        <form action="#" class="main-form">
+          <div class="popup-form-header">Получите индивидуальное предложение
+            <span>на производство и поставку изделий</span>
+            <label for="phone" class="popup-form__label">
+              Введите ваш номер телефона:
+            </label>
+            <input type="tel" class="popup-form__input" name="phone" placeholder="+7 (ХХХ) ХХХ-ХХ-ХХ" required>
+            <button class="button popup-form__btn">
+              Оставить заявку!
+            </button>
+            <div class="popup-form__note">
+              *Минимальный заказ 500шт
+            </div>
+          </div>
+        </form>
+      </div>
+      <!-- /.popup-form -->
+    </div>
+    <!-- /.overlay -->
+  </div>
+  <!-- /.modal -->
+  <!-- Конец - Модальное окно "Форма обратной связи" -->
+
+  <!-- about 320 -->
+
+  <div class="about-w320">
+    <div class="about-w320-title">Производство упаковки из гофрокартона
+      <div class="white">с доставкой по всей России</div>
+    </div>
+    <div class="about-w320-subtitle">
+      Получите индивидуальное предложение на производство и поставку гофропродукции<br>
+      <div class="white-big">Образцы упаковки бесплатно!</div>
+    </div>
+    <input type="tel" class="about-w320-input" placeholder="Введите номер телефона">
+    <button class="about-w320-button">Оставить заявку!</button>
+    <div class="about-w320-text">*Минимальный заказ 500шт</div>
+  </div>
+
+  <!-- /.about-subtitle -->
+  <!-- /.about 320-->
+
+
+  <div class="header-menu">
+    <div class="header-menu-1"><a href="#">О компании</a></div>
+    <div class="header-menu-1"><img src="build/images/header/line.png" alt=""></div>
+    <div class="header-menu-2"><a href="#triggers">преимущества</a></div>
+    <div class="header-menu-1"><img src="build/images/header/line.png" alt=""></div>
+    <div class="header-menu-3"><a href="#title">производство</a></div>
+    <div class="header-menu-1"><img src="build/images/header/line.png" alt=""></div>
+    <div class="header-menu-4"><a href="#triggers">склад</a></div>
+    <div class="header-menu-1"><img src="build/images/header/line.png" alt=""></div>
+    <div class="header-menu-5"><a href="#product">Продукция</a></div>
+    <div class="header-menu-1"><img src="build/images/header/line.png" alt=""></div>
+    <div class="header-menu-6"><a href="#clients">наши клиенты</a></div>
+    <div class="header-menu-1"><img src="build/images/header/line.png" alt=""></div>
+    <div class="header-menu-7"><a href="#reviews">Сертификаты</a></div>
+    <div class="header-menu-1"><img src="build/images/header/line.png" alt=""></div>
+    <div class="header-menu-8"><a href="#reviews">Отзывы</a></div>
+    <div class="header-menu-1"><img src="build/images/header/line.png" alt=""></div>
+    <div class="header-menu-9"><a href="#footer">контакты</a></div>
+  </div>
+  <div class="container">
+    <div class="header">
+      <div class="header-logo">
+        <img src="build/images/header-logo.png" alt="" />
+      </div>
+      <div class="header-phones">
+        <div class="header-phone_1">8 (347) 271-54-28</div>
+        <div class="line"></div>
+        <div class="header-phone_2">
+          8 (937) 363-30-00
+        </div>
+      </div>
+      <div class="header-button" id="btn1">
+        <img src="build/images/header-phone.png" alt="" /><span class="header-text">Заказать звонок</span>
+      </div>
+    </div>
+  </div>
+  <div class="title" id="title">
+    <div class="title-bg">
+      <div class="title-bg__box-img w768">
+        <img class="box768" src="build/images/title/card-box.png" alt="" />
+      </div>
+      <div class="title-bg__title">
+        <div class="title-bg__title-title">
+          Производство упаковки из гофрокартона<br />
+          <span class="sub-text">с доставкой по всей России</span>
+        </div>
+        <div class="title-bg__title-form">
+          <div class="title-bg__title-form__text">
+            Получите индивидуальное предложение на производство и поставку
+            гофропродукции
+            <span class="form-text-upper">Образцы упаковки бесплатно!</span>
+          </div>
+          <div class="title-bg__title-form-tel_button">
+            <div class="title-bg__title-form__textTel">
+              <input type="tel" placeholder="Введите номер телефона" />
+            </div>
+            <div class="title-bg__title-form__button">
+              <button>Оставить заявку!</button>
+            </div>
+          </div>
+          <div class="title-bg__title-form__downText">
+            *Минимальный заказ 500шт
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- .triggers-w768-->
+
+  <div class="triggers w768" id="triggers">
+    <div class="text-2 wow fadeInUp" data-wow-delay="0.1s">
+      <p>до 5 000 000 м<sup>2</sup></p>
+      <span class="text-txt">Ежемесячный объем производства гофрокартона</span>
+    </div>
+    <div class="triggers w768-inside">
+
+      <div class="text-1 wow fadeInUp" data-wow-delay="0.1s">
+        <p>5 лет</p>
+        <span class="text-txt">На рынке изделий из гофрокартона</span>
+      </div>
+
+      <div class="text-3 wow fadeInUp" data-wow-delay="0.1s">
+        <p>4 000 м<sup>2</sup></p>
+        <span class="text-txt">Площадь склада</span>
+      </div>
+
+      <div class="text-4 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="text-img">
+          <img src="build/images/triggers/1.png" alt="" />
+        </div>
+        <div>
+          <span class="text-title">Собственное Производство</span><span class="text-subtitle">4 технологические линии
+            спо- собны
+            выполнить любой заказ любой
+            сложности</span>
+        </div>
+      </div>
+      <div class="text-5 wow fadeInUp" data-wow-delay="0.2s">
+        <div class="text-img">
+          <img src="build/images/triggers/2.png" alt="" />
+        </div>
+        <div>
+          <span class="text-title">Бесплатные образцы </span><span class="text-subtitle">Бесплатно делаем образцы
+            гофроупаковки - это помогает заранее
+            увидеть упаковку</span>
+        </div>
+      </div>
+      <div class="text-6 wow fadeInUp" data-wow-delay="0.2s">
+        <div class="text-img">
+          <img src="build/images/triggers/3.png" alt="" />
+        </div>
+        <div>
+          <span class="text-title">Стабильное качество</span><span class="text-subtitle">Собственная лаборатория кон-
+            тролирует качество на каждом этапе
+            производства</span>
+        </div>
+      </div>
+      <div class="text-7 wow fadeInUp" data-wow-delay="0.2s">
+        <div class="text-img">
+          <img src="build/images/triggers/4.png" alt="" />
+        </div>
+        <div>
+          <span class="text-title">Страховой запас</span><span class="text-subtitle">Можем хранить запас гофро-
+            продукции на своих складах и
+            поставлять его партиями</span>
+        </div>
+      </div>
+      <div class="text-8 wow fadeInUp" data-wow-delay="0.2s">
+        <div class="text-img">
+          <img src="build/images/triggers/5.png" alt="" />
+        </div>
+        <div>
+          <span class="text-title">Флексопечать</span><span class="text-subtitle">Возможно нанесение вашего логотипа,
+            текста или мани- пуляционных
+            знаков</span>
+        </div>
+      </div>
+      <div class="text-9 wow fadeInUp" data-wow-delay="0.2s">
+        <div class="text-img">
+          <img src="build/images/triggers/6.png" alt="" />
+        </div>
+        <div>
+          <span class="text-title">Гидрофобные добавки</span><span class="text-subtitle">На производстве реализована
+            технология, которая позволяет
+            гофрокартону стать прочнее</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- .triggers w768 -->
+
+
+  <!-- .triggers -->
+  <div class="triggers" id="triggers">
+    <div class="triggers-inside">
+      <div class="text-1 wow fadeInUp" data-wow-delay="0.1s">
+        <p>5 лет</p>
+        <span class="text-txt">На рынке изделий из гофрокартона</span>
+      </div>
+      <div class="text-2 wow fadeInUp" data-wow-delay="0.1s">
+        <p>до 5 000 000 м<sup>2</sup></p>
+        <span class="text-txt">Ежемесячный объем производства гофрокартона</span>
+      </div>
+      <div class="text-3 wow fadeInUp" data-wow-delay="0.1s">
+        <p>4 000 м<sup>2</sup></p>
+        <span class="text-txt">Площадь склада</span>
+      </div>
+
+      <div class="text-4 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="text-img">
+          <img src="build/images/triggers/1.png" alt="" />
+        </div>
+        <div>
+          <span class="text-title">Собственное Производство</span><span class="text-subtitle">4 технологические линии
+            спо- собны
+            выполнить любой заказ любой
+            сложности</span>
+        </div>
+      </div>
+      <div class="text-5 wow fadeInUp" data-wow-delay="0.2s">
+        <div class="text-img">
+          <img src="build/images/triggers/2.png" alt="" />
+        </div>
+        <div>
+          <span class="text-title">Бесплатные образцы </span><span class="text-subtitle">Бесплатно делаем образцы
+            гофроупаковки - это помогает заранее
+            увидеть упаковку</span>
+        </div>
+      </div>
+      <div class="text-6 wow fadeInUp" data-wow-delay="0.2s">
+        <div class="text-img">
+          <img src="build/images/triggers/3.png" alt="" />
+        </div>
+        <div>
+          <span class="text-title">Стабильное качество</span><span class="text-subtitle">Собственная лаборатория кон-
+            тролирует качество на каждом этапе
+            производства</span>
+        </div>
+      </div>
+      <div class="text-7 wow fadeInUp" data-wow-delay="0.2s">
+        <div class="text-img">
+          <img src="build/images/triggers/4.png" alt="" />
+        </div>
+        <div>
+          <span class="text-title">Страховой запас</span><span class="text-subtitle">Можем хранить запас гофро-
+            продукции на своих складах и
+            поставлять его партиями</span>
+        </div>
+      </div>
+      <div class="text-8 wow fadeInUp" data-wow-delay="0.2s">
+        <div class="text-img">
+          <img src="build/images/triggers/5.png" alt="" />
+        </div>
+        <div>
+          <span class="text-title">Флексопечать</span><span class="text-subtitle">Возможно нанесение вашего логотипа,
+            текста или мани- пуляционных
+            знаков</span>
+        </div>
+      </div>
+      <div class="text-9 wow fadeInUp" data-wow-delay="0.2s">
+        <div class="text-img">
+          <img src="build/images/triggers/6.png" alt="" />
+        </div>
+        <div>
+          <span class="text-title">Гидрофобные добавки</span><span class="text-subtitle">На производстве реализована
+            технология, которая позволяет
+            гофрокартону стать прочнее</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- .product-w768 -->
+
+  <div class="product-w768" id="product">
+
+    <div class="product-w768-title">наша продукция</div>
+    <div class="wave"></div>
+    <div class="product-w768-container">
+      <div class="product-w768-boxes-1">
+        <div class="product-w768-boxes-1 wow slideInLeft" data-wow-delay="0.2s">
+          <div class="product-boxes-1_img">
+            <img src="build/images/768/production/1.png" alt="" />
+          </div>
+          <div class="product-boxes-1_text">Гофрокороб 4-х клапанный</div>
+          <div class="product-boxes-1_buttons">
+            <div class="product-boxes-1-btn1">
+              <button>Подробнее</button>
+            </div>
+            <div class="product-boxes-1_btn2">
+              <button>Получить расчет</button>
+            </div>
+          </div>
+        </div>
+        <div class="product-w768-boxes-2 wow slideInRight" data-wow-delay="0.2s">
+          <div class="product-boxes-2_img">
+            <img src="build/images/768/production/2.png" alt="" />
+          </div>
+          <div class="product-boxes-2_text">Гофролоток
+          </div>
+          <div class="product-boxes-2_buttons">
+            <div class="product-boxes-2-btn1">
+              <button>Подробнее</button>
+            </div>
+            <div class="product-boxes-2_btn2 white">
+              <button>Получить расчет</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="product-w768-boxes-2">
+        <div class="product-w768-boxes-3 wow slideInLeft" data-wow-delay="0.4s">
+          <div class="product-boxes-3_img">
+            <img src="build/images/768/production/3.png" alt="" />
+          </div>
+          <div class="product-w768-boxes-3_text">Гофрокороб самосборный (сложная высечка)
+          </div>
+          <div class="product-boxes-3_buttons">
+            <div class="product-boxes-3-btn1">
+              <button>Подробнее</button>
+            </div>
+            <div class="product-boxes-3_btn2">
+              <button>Получить расчет</button>
+            </div>
+          </div>
+        </div>
+        <div class="product-w768-boxes-4 wow slideInRight" data-wow-delay="0.4s">
+          <div class="product-boxes-4_img">
+            <img src="build/images/768/production/4.png" alt="" />
+          </div>
+          <div class="product-boxes-4_text">Листовой гофрокартон</div>
+          <div class="product-boxes-4_buttons">
+            <div class="product-boxes-4-btn1">
+              <button>Подробнее</button>
+            </div>
+            <div class="product-boxes-4_btn2">
+              <button>Получить расчет</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <!-- /.product-w768 -->
+
+
+  <div class="product" id="product">
+    <div class="product-title">наша продукция</div>
+    <div class="wave"></div>
+    <div class="product-container">
+      <div class="product-boxes">
+        <div class="product-boxes-1 wow slideInLeft" data-wow-delay="0.2s">
+          <div class="product-boxes-1_img">
+            <img src="build/images/production/1.png" alt="" />
+          </div>
+          <div class="product-boxes-1_text">Гофрокороб 4-х клапанный</div>
+          <div class="product-boxes-1_buttons">
+            <div class="product-boxes-1-btn1">
+              <button>Подробнее</button>
+            </div>
+            <div class="product-boxes-1_btn2">
+              <button>Получить расчет</button>
+            </div>
+          </div>
+        </div>
+        <div class="product-boxes-2 wow slideInRight" data-wow-delay="0.2s">
+          <div class="product-boxes-2_img">
+            <img src="build/images/production/2.png" alt="" />
+          </div>
+          <div class="product-boxes-2_text">Гофролоток
+          </div>
+          <div class="product-boxes-2_buttons">
+            <div class="product-boxes-2-btn1">
+              <button>Подробнее</button>
+            </div>
+            <div class="product-boxes-2_btn2 white">
+              <button>Получить расчет</button>
+            </div>
+          </div>
+        </div>
+        <div class="product-boxes-3 wow slideInLeft" data-wow-delay="0.4s">
+          <div class="product-boxes-3_img">
+            <img src="build/images/production/3.png" alt="" />
+          </div>
+          <div class="product-boxes-3_text">Гофрокороб самосборный (сложная высечка)
+          </div>
+          <div class="product-boxes-3_buttons">
+            <div class="product-boxes-3-btn1">
+              <button>Подробнее</button>
+            </div>
+            <div class="product-boxes-3_btn2">
+              <button>Получить расчет</button>
+            </div>
+          </div>
+        </div>
+        <div class="product-boxes-4 wow slideInRight" data-wow-delay="0.4s">
+          <div class="product-boxes-4_img">
+            <img src="build/images/production/4.png" alt="" />
+          </div>
+          <div class="product-boxes-4_text">Листовой гофрокартон</div>
+          <div class="product-boxes-4_buttons">
+            <div class="product-boxes-4-btn1">
+              <button>Подробнее</button>
+            </div>
+            <div class="product-boxes-4_btn2">
+              <button>Получить расчет</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- /.product -->
+
+  <!-- .offer-container 320-->
+
+  <div class="offer-w320-container">
+    <div class="offer-w320">
+      <div class="offer-w320-title">Получите индивидуальное предложение<br>
+        <span class="offer-w320-subtitle">на производство и поставку изделий</span></div>
+      <div class="offer-w320-text">Введите ваш номер телефона:</div>
+      <div class="offer-w320-input"><input type="tel" placeholder="+7 (ХХХ) ХХХ-ХХ-ХХ"></div>
+      <div class="offer-w320-button"><button>Оставить заявку!</button></div>
+      <div class="offer-w320-downtext">*Минимальный заказ 500шт</div>
+    </div>
+  </div>
+  <!-- /.offer-container -->
+
+  <!-- .offer-container -->
+
+  <div class="offer-container">
+    <div class="offer">
+      <div class="offer-title">Получите индивидуальное предложение<br>
+        <span class="offer-subtitle">на производство и поставку изделий</span></div>
+      <div class="offer-text">Введите ваш номер телефона:</div>
+      <div class="offer-input"><input type="tel" placeholder="+7 (ХХХ) ХХХ-ХХ-ХХ"></div>
+      <div class="offer-button"><button>Оставить заявку!</button></div>
+      <div class="offer-downtext">*Минимальный заказ 500шт</div>
+    </div>
+  </div>
+
+  <!-- /.offer-container -->
+
+
+  <!-- Production 320-->
+
+  <div class="production-w320">
+    <div class="production-w320-container">
+      <div class="production-w320-container-gallery">
+        <div class="production-w320-img-gallery"><img src="build/images/product/bg.png" alt=""></div>
+        <div class="production-w320-img-gallery_foto">
+          <img src="build/images/product/arrow-left_opacity.png" alt="">
+          <img src="build/images/product/1.png" alt="">
+          <img src="build/images/product/2.png" alt="">
+          <img src="build/images/product/3.png" alt="">
+          <img src="build/images/product/4.png" alt="">
+          <img src="build/images/product/arrow-right_opacity.png" alt="">
+        </div>
+      </div>
+      <div class="production-w320-text">
+        <div class="production-w320-text__title">Производство</div>
+        <div class="production-w320-text__text">Современное оборудование позволяет произ-
+          водить до 5 миллионов квадратных метров
+          гофрокартона ежемесячно. Гофрокороба и лотки производятся по ГОСТу или чертежам заказчика.</div><br>
+        <div class="production-w320-text__text">Досконально прорабатываем конструкции коро- бов и составы
+          сырья, учитывая условия хранения, транспортировки и
+          производства вашей продукции.</div><br>
+        <div class="production-w320-text__text">Возможно нанесение цветной флексопечати на
+          поверхность коробов.</div>
+
+        <div class="production-w320-text__320 up">Современное оборудование позволяет производить до 5 миллионов
+          квадратных метров
+          гофрокартона ежемесячно. Гофрокороба и лотки производятся по ГОСТу или чертежам заказчика.</div><br>
+        <div class="production-w320-text__320 up1">Досконально прорабатываем конструкции коробов и составы
+          сырья, учитывая условия хранения, транспортировки и
+          производства вашей продукции.</div><br>
+        <div class="production-w320-text__320">Возможно нанесение цветной флексопечати на
+          поверхность коробов.</div>
+      </div>
+      <div class="gallery">
+        <div class="gallery-foto">
+          <div class="gallery-foto__img">
+            <img src="build/images/320/fon1.png" alt="">
+            <div class="gallery-foto__buttons">
+              <div class="gallery-foto__buttons-btn_left"><img src="build/images/320/left.png" alt=""></div>
+              <div class="gallery-foto__buttons-btn_right"><img src="build/images/320/right.png" alt=""></div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /Production 320 -->
+
+  <!-- Production 768-->
+
+  <div class="production-w768">
+    <div class="production-w768-container">
+      <div class="production-w768-container-gallery">
+        <div class="production-w768-img-gallery"><img src="build/images/product/bg.png" alt=""></div>
+        <div class="production-w768-img-gallery_foto">
+          <img src="build/images/product/arrow-left_opacity.png" alt="">
+          <img src="build/images/product/1.png" alt="">
+          <img src="build/images/product/2.png" alt="">
+          <img src="build/images/product/3.png" alt="">
+          <img src="build/images/product/4.png" alt="">
+          <img src="build/images/product/arrow-right_opacity.png" alt="">
+        </div>
+      </div>
+      <div class="production-w768-text">
+        <div class="production-w768-text__title">Производство</div>
+        <div class="production-w768-text__text">Современное оборудование позволяет произ
+          водить до 5 миллионов квадратных метров
+          гофрокартона ежемесячно. Гофрокороба и лотки производятся по ГОСТу или чертежам заказчика.</div><br>
+        <div class="production-w768-text__text">Досконально прорабатываем конструкции коробов и составы
+          сырья, учитывая условия хранения, транспортировки и
+          производства вашей продукции.</div><br>
+        <div class="production-w768-text__text">Возможно нанесение цветной флексопечати на
+          поверхность коробов.</div>
+      </div>
+    </div>
+  </div>
+  <!-- /Production 768-->
+
+  <!-- Production -->
+
+  <div class="production">
+    <div class="production-container">
+      <div class="production-container-gallery">
+        <div class="production-img-gallery"><img src="build/images/product/bg.png" alt=""></div>
+        <div class="production-img-gallery_foto">
+          <img src="build/images/product/arrow-left_opacity.png" alt="">
+          <img src="build/images/product/1.png" alt="">
+          <img src="build/images/product/2.png" alt="">
+          <img src="build/images/product/3.png" alt="">
+          <img src="build/images/product/4.png" alt="">
+          <img src="build/images/product/arrow-right_opacity.png" alt="">
+        </div>
+      </div>
+      <div class="production-text">
+        <div class="production-text__title">Производство</div>
+        <div class="production-text__text">Современное оборудование позволяет произ-
+          водить до 5 миллионов квадратных метров
+          гофрокартона ежемесячно. Гофрокороба и лотки производятся по ГОСТу или чертежам заказчика.</div><br>
+        <div class="production-text__text">Досконально прорабатываем конструкции коро- бов и составы
+          сырья, учитывая условия хранения, транспортировки и
+          производства вашей продукции.</div><br>
+        <div class="production-text__text">Возможно нанесение цветной флексопечати на
+          поверхность коробов.</div>
+      </div>
+    </div>
+  </div>
+  <!-- /Production -->
+
+  <!-- clients -->
+  <div class="clients" id="clients">
+    <div class="clients-title">Наши клиенты</div>
+    <div class="wave"></div>
+    <div class="clients-container">
+      <div class="clients-container-box1"></div>
+      <div class="clients-container-box2"></div>
+      <div class="clients-container-box3"></div>
+      <div class="clients-container-box4"></div>
+      <div class="clients-container-box5"></div>
+      <div class="clients-container-box6"></div>
+      <div class="clients-container-box7"></div>
+      <div class="clients-container-box8"></div>
+      <div class="clients-container-box9"></div>
+      <div class="clients-container-box10"></div>
+      <div class="clients-container-box11"></div>
+      <div class="clients-container-box12"></div>
+    </div>
+  </div>
+
+
+  <!-- Rewiews 320-->
+
+  <div class="container-reviews-w320" id="reviews">
+    <div class="container-reviews-title-w320">Отзывы о сотрудничестве</div>
+    <div class="wave"></div>
+    <div class="container-reviews-box-w320">
+      <div class="container-reviews-boxes-w320">
+        <div class="reviews-box-btn-left"><img src="build/images/reviews/arrow-left.png" alt=""></div>
+        <div class="reviews-box-btn-left-w320"><img src="build/images/320/left.png" alt=""></div>
+        <div class="reviews-box-img-w320"><img src="build/images/320/paper.png" alt=""></div>
+        <!-- <div class="reviews-box-img"><img src="build/images/reviews/img2.png" alt=""></div>
+          <div class="reviews-box-img"><img src="build/images/reviews/img3.png" alt=""></div> -->
+        <div class="reviews-box-btn-right"><img src="build/images/reviews/arrow-right.png" alt=""></div>
+        <div class="reviews-box-btn-right-w320"><img src="build/images/320/right.png" alt=""></div>
+      </div>
+    </div>
+  </div>
+  <!-- /.reviews-box 320-->
+
+
+  <!-- Rewiews -->
+
+  <div class="container-reviews" id="reviews">
+    <div class="container-reviews-title">Отзывы о сотрудничестве</div>
+    <div class="wave"></div>
+    <div class="container-reviews-box">
+      <div class="container-reviews-boxes">
+        <div class="reviews-box-btn-left"><img src="build/images/reviews/arrow-left.png" alt=""></div>
+        <div class="reviews-box-img"><img src="build/images/reviews/img1.png" alt=""></div>
+        <div class="reviews-box-img-w768"><img src="build/images/reviews/img2.png" alt=""></div>
+        <div class="reviews-box-img"><img src="build/images/reviews/img3.png" alt=""></div>
+        <div class="reviews-box-btn-right"><img src="build/images/reviews/arrow-right.png" alt=""></div>
+      </div>
+    </div>
+    <!-- /.reviews-box -->
+  </div>
+  <!-- /.container-reviews -->
+
+
+  <!-- .address 320-->
+
+  <div class="address-w320" id="address">
+
+    <div class="address-w320-map">
+      <div class="address-w320-map-form w320">
+        <div class="form-w320">
+          <div class="form-w320-office">
+            <div class="form-w320-marker"><img src="build/images/address/marker.png" alt=""></div>
+            <div class="form-w320-title">
+              контакты
+            </div>
+            <div><span class="black">Адрес офиса</span><br>
+              г. Уфа, Проспект октября, 46</div>
+          </div>
+          <div class="form-w320-warehouse">
+            <div></div>
+            <div><span class="black">Адрес склада</span><br>
+              г. Уфа, ул. Майкопская, 65/2</div>
+          </div>
+          <div class="form-w320-tel-sales">
+            <div class="form-w320-marker"><img src="build/images/address/tel.png" alt=""></div>
+            <div><span class="black">Тел. отдела продаж:</span>
+              <br>
+              8 (347) 271-54-28 <br>
+              8 (937) 363-30-00
+            </div>
+          </div>
+          <button class="form-w320-button">Заказать звонок</button>
+          <div class="form-w320-mail">
+            <div class="form-w320-marker"><img src="build/images/address/mail.png" alt=""></div>
+            <div><span class="black">Е-mail</span>
+              <br>
+              urals.karton@gmail.com
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /.address 320-->
+
+
+  <!-- .address -->
+
+  <div class="address" id="address">
+
+    <div class="address-map">
+      <div class="address-map-form">
+        <div class="form">
+          <div class="form-office">
+            <div><img src="build/images/address/marker.png" alt=""></div>
+            <div><span class="black">Адрес офиса</span><br>
+              г. Уфа, Проспект октября, 46</div>
+          </div>
+          <div class="form-warehouse">
+            <div></div>
+            <div><span class="black">Адрес склада</span><br>
+              г. Уфа, ул. Майкопская, 65/2</div>
+          </div>
+          <div class="form-tel-sales">
+            <div><img src="build/images/address/tel.png" alt=""></div>
+            <div><span class="black">Тел. отдела продаж:</span>
+              <br>
+              8 (347) 271-54-28 <br>
+              8 (937) 363-30-00
+            </div>
+          </div>
+          <button class="form-button">Заказать звонок</button>
+          <div class="form-mail">
+            <div><img src="build/images/address/mail.png" alt=""></div>
+            <div><span class="black">Е-mail</span>
+              <br>
+              urals.karton@gmail.com
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /.address -->
+
+  <div id="map" class="ya-map"></div>
+
+  <!-- footer -->
+  <div class="footer" id="footer">© www.gofra-ural.ru 2016, все права защищены</div>
+
+  <script src="build/js/main.js"></script>
+  <script src="build/js/wow.min.js"></script>
+  <script src="build/js/map.js"></script>
+  <script>
+    new WOW().init();
+  </script>
+</body>
+
+</html>
