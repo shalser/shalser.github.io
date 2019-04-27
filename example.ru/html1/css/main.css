@@ -1,0 +1,777 @@
+/*Основные стили*/
+body {
+  font-family: "PTSansRegular";
+  font-size: 14px;
+  color: #000000;
+  background-color: #ececee;
+}
+
+a {color:#FFFFFF; text-decoration: none;}
+a:focus { 
+	color:inherit; 
+	text-decoration: none;
+}
+.fa-rub{font-size:90%;}
+i {font-family: "PTSansItalic";}
+
+
+/* Промоблок */
+#main_banner{
+	background: #080409 url('../images/bg.jpg') 50% 35%;
+	background-size: cover;
+	min-height: 600px;
+	padding:0;
+}
+
+.promobox{
+	color: #fff;
+}
+
+/* Главное меню */
+.header_container{
+    position: absolute;
+	width: 100%;
+    padding-top: 45px;
+	color:#FFF;
+	z-index:20;
+}
+
+.header_container a{
+	border-bottom: 1px solid;
+}
+.header_container a:hover {
+	color:#ffdd00;
+	text-decoration: none;
+}
+
+.header_container .logobox{
+    width: 335px;
+    overflow: hidden;	
+}
+
+.header_container #logo{
+	float: left;
+	margin-right: 13px;
+}
+
+.header_container #logo_hover{
+	float: left;
+	display:none;	
+}
+
+.header_container #slogan {
+	border-left: 1px solid #FFF;
+    padding-top: 6px;
+    padding-bottom: 8px;
+    font-size: 14px;
+    font-weight: 400;
+    padding-left: 15px;
+    margin-top: 2px;
+    float: left;
+}
+
+.header_container .feedback{
+	text-align:right;
+}
+
+.header_container .feedback .phone{
+	font-size: 24px;	
+}
+
+.header_container .feedback .phone span{
+	font-family:"PTSansBold";
+	font-weight: 700;
+}
+
+.header_container .feedback .action_link{
+	font-size:16px;
+}
+
+.header_container .feedback .action_link a{
+	border-bottom:1px dashed;
+}
+
+.header_container ul.main-nav {
+	list-style: none;
+	float: right;
+	padding-top: 6px;
+    padding-bottom: 6px;
+	font-size:16px;
+}
+
+.header_container ul.main-nav li{
+	display:block;
+	padding-left: 15px;
+	float:left;
+}
+
+.header_container ul.main-nav li:first-child{
+	padding-left: 0px;	
+}
+
+@media (max-width: 1200px) {
+	.header_container .feedback .phone{
+		font-size: 22px;	
+	}
+	.header_container .feedback .action_link{
+		font-size: 15px;
+	}	
+	.header_container ul.main-nav li{
+		font-size: 15px;
+		padding-left: 16px;
+	}
+}
+
+.header_container.header_hover{
+	background:#FFF;
+	color:#353535;
+	padding-top: 13px;
+	padding-bottom: 15px;
+	position:fixed;
+	border-bottom:1px solid #D1D1D1;
+}
+
+.header_container.header_hover a{
+	color: #008ACE;	
+}
+
+.header_container.header_hover a:hover {
+	color:#353535;
+	text-decoration: none;
+}
+
+
+.header_container.header_hover #logo {display:none;}
+.header_container.header_hover #logo_hover {display:block;}
+.header_container.header_hover #slogan { display:none;}
+.header_container.header_hover .feedback .action_link{display:none;}
+
+.header_container.header_hover  ul.main-nav{
+	padding-top: 12px;
+	margin-bottom: 0px;
+	font-size: 14px;
+}
+
+.header_container.header_hover .feedback .phone{
+	padding-top: 7px;	
+}
+
+
+/* Заголовки в промозоне */
+
+.titlebox{
+    padding-top: 7%;
+	margin-top: 145px;
+}
+
+.titlebox .title{
+	font-family:"PTSerifRegular";
+	font-size:90px;
+	line-height: 90px;
+}
+    
+.titlebox .subtitle{
+	font-family:"PTSansNarrow"; 
+	font-size:47px;
+	line-height: 47px;
+}
+
+/* Преимущества промо зоны */
+
+.advantagesbox{
+	text-align:center;
+	margin-top: -230px;
+	margin-bottom: 45px;
+	color:#FFF;
+}
+
+.advantagesbox .icon {
+	background: url('../images/sp_advantages.png');
+	background-repeat:no-repeat;
+	width: 115px;
+	height: 120px;
+	margin: 0 auto 15px auto;
+}
+
+.advantagesbox .icon.item1{
+	  background-position-x: 0px;
+}
+.advantagesbox .icon.item2 {
+    background-position: -116px 0;
+}
+.advantagesbox .icon.item3 {
+    background-position: -240px 0;
+}
+
+.advantagesbox .title {
+	font-size:24px;
+	line-height: 24px;
+	text-transform:uppercase;
+}
+
+.advantagesbox .subtitle {
+	font-size:20px;	
+}
+
+
+/* Блок с продуктами */
+#product{
+	position:relative;
+	background: transparent;
+	z-index: 1;
+	overflow:hidden;
+}
+
+#product .maintitle{
+	font-family: 'PTSerifRegular';
+	color:#353535;
+	font-size: 40px;
+	line-height: 48px;
+	text-align: center;
+	margin: 55px auto 130px auto;
+	width:550px;
+}
+
+#product .productbox {
+	text-align:center;
+	position: relative;
+	left: -20%;
+	top: -95px;
+}
+
+#product .productbox img{
+	width:170%;
+	-vendor-animation-duration: 13s;
+	-vendor-animation-delay: 12s;
+}
+
+@media (max-width: 970px) {
+	#product .productbox {
+		text-align:center;
+		position: relative;
+		top: -95px;
+		left: 0;
+	}
+	
+	#product .productbox img{
+		width:100%;
+	}			
+}
+
+#product .description{
+	color:#353535;
+	z-index:10;
+	background-color: rgba(236, 236, 238, 0.8);
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#product .description p.title{
+	font-family: 'PTSansNarrowBold';
+	font-size: 24px;
+}
+
+#product .description p{
+	
+}
+
+#product .description .listtitle{
+	margin-bottom: 0;	
+}
+
+#product .description ul{
+	padding-left: 17px;	
+}
+
+#product .description a{
+	color:#008ACE;
+	border-bottom:1px dashed;		
+}
+
+#product .description a:hover{
+	text-decoration: none;
+	color:#353535;		
+}
+
+
+/*************************/
+/*Блок с процессом работы*/
+/*************************/
+
+#process {
+	background: #b0a69c url('../images/process_background.jpg') bottom center;
+	background-repeat:no-repeat;
+	background-size: cover;
+	position: relative;
+	z-index: 0;
+	top: -190px;
+	min-height: 856px;
+}
+
+#process .maintitle{
+	font-family: 'PTSerifRegular';
+	color:#FFF;
+	font-size: 40px;
+	line-height: 48px;
+	text-align: center;
+	margin: 145px 0 0 0;
+}
+
+#process .mainsubtitle{
+	color: #FFF;
+	font-size: 20px;
+	line-height: 24px;
+	text-align: center;
+	max-width: 1000px;
+	margin: 20px auto 37px auto;
+}
+
+
+#process  .process_bar img{
+	width: 100%;
+}
+
+
+#process .subtitle {
+    color: #FFF;
+    font-size: 16px;
+    letter-spacing: 1px;
+	margin-top: 28px;
+    text-transform: uppercase;
+}
+
+#process .subtext {
+    color: #FFF;
+    font-size: 14px;
+    margin: 12px 0 30px 0;
+    line-height: 1.3;
+}
+
+#fixed_bgr {
+	background: url('../images/office.jpg') no-repeat bottom fixed;
+    background-size: cover;
+    margin-top: -190px;
+    display: block;
+    min-height: 480px;
+}
+
+#before_before_plate {
+	display: block;
+	height: 400px;
+	width: auto;
+}
+
+#before_plate {
+	background: none;
+	opacity: 0;
+}
+
+#plate {
+	background: #ffffff;
+	opacity: 0.89;
+	display: block;
+	min-height: 300px;
+	padding-left: 67px;
+	padding-right: 67px;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	margin: 130px 0px;
+}
+
+#plate  .title {
+	font-family: 'PTSerifRegular';
+	color: #353535;
+	font-size: 40px;
+	line-height: 48px;
+}
+
+#plate  .subtitle {
+	font-family: 'PTSerifRegular';
+	color: #353535;
+	font-size: 40px;
+    font-size: 28px;
+    line-height: 32px;
+    padding: 20px 0 10px 0;
+}
+
+#plate  .subtext {
+    color: #000;
+    font-size: 16px;
+    margin: 10px 0 0 0;
+    line-height: 1.5;
+}
+
+
+/*****************************/
+/*       Блок Персонал      */
+/****************************/
+
+/*   О нас   */
+#personnel_container {
+}
+
+
+.team_title {
+	font-family: 'PTSerifRegular';
+	color: #353535;
+	font-size: 40px;
+	text-align: center;
+	margin: 80px 0 37px 0;
+}
+
+/*  Наша команда  */
+.personnel > img {
+	width: 100%;
+}
+
+.personnel {
+	border-radius: 50%;
+    box-shadow: 0px 0px 0px 4px #fff;
+    width: 140px;
+    height: 140px;
+    display: block;
+    /*background: url('../images/brad_pitt.png') no-repeat center;*/
+    font-size: 0px;
+    overflow: hidden;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.personnel_name {
+	font-family: 'PTSansBold';
+	color: #000000;
+	font-size: 16px;
+	text-decoration: none;
+	text-align: center;
+	margin: 27px 0 3px 0;
+	text-decoration: none;
+}
+
+.personnel_title {
+	font-family: 'PTSansItalic';
+	color: #707070;
+	font-size: 16px;
+	text-decoration: none;
+	text-align: center;
+}
+
+a:hover.nounderline  {
+	text-decoration: none !important;
+}
+
+
+
+
+
+/***************************/
+/*  Блок Оставить заявку   */
+/***************************/
+
+#questions_form {
+	display: block;
+	background: #5d6676;
+}
+
+#questions_form form{
+	margin-left: 53px;
+}
+
+.questions_form_title {
+	font-family: 'PTSerifRegular';
+	color: #FFFFFF;
+	font-size: 40px;
+	margin: 35px 0 13px 53px;
+}
+
+.questions_form {
+	color: #FFFFFF;
+	font-size: 16px;
+	margin: 0 0 30px 53px;
+}
+
+.form_itself {
+	display: block;
+	margin: 0 0 59px 0;
+}
+
+
+.form_input {
+	border-radius: 3px;
+	color: #353535;
+	font-size: 16px;
+	margin: 0 0 20px 0;
+	width: 330px;
+	height: 40px;
+	margin-right: 20px;
+	padding-left: 20px;
+	border-style: none;	
+	float: left;
+}
+
+/*Задаём стиль для placeholder*/
+::-webkit-input-placeholder {color:#353535;}
+::-moz-placeholder          {color:#353535;}/* Firefox 19+ */
+:-moz-placeholder           {color:#353535;}/* Firefox 18- */
+:-ms-input-placeholder      {color:#353535;}
+:focus::-webkit-input-placeholder {color: transparent}
+:focus::-moz-placeholder          {color: transparent}
+:focus:-moz-placeholder           {color: transparent}
+:focus:-ms-input-placeholder      {color: transparent}
+
+.error:focus::-webkit-input-placeholder {color: transparent}
+.error:focus::-moz-placeholder          {color: transparent}
+.error:focus:-moz-placeholder           {color: transparent}
+.error:focus:-ms-input-placeholder      {color: transparent}
+
+/*отменяем подсветку у input*/
+input, textarea {outline:none;}
+
+/*опишем стили кнопки*/
+.form_submit {
+	border-radius: 3px;
+	background-color: #60a701;
+	display: block;
+	width: 200px;
+	height: 40px;
+	color: #FFFFFF;
+	font-size: 16px;
+	border-left: none;
+	border-right: none;
+	border-top: none;
+	border-bottom: 3px solid #528e01;
+	line-height: 39px;
+	float: left;
+	text-align: center;
+}
+
+.form_submit:hover {
+	background-color: #7fc52f;
+	color: #fff;
+}
+
+
+/*****************************/
+/*       Блок googlemaps     */
+/*****************************/
+
+
+
+#contacts {
+    height: 300px;
+    margin: 0 auto;
+    padding: 10px;
+    position: relative;
+}
+
+#contacts a {
+	color: #008ACE;
+	border-bottom:1px solid;
+}
+
+a:hover{
+	text-decoration: none;	
+}
+
+#map{
+	height: 500px;
+	width: 100%;	
+}	
+
+#contacts .contact_wrapper{
+	margin-top: -400px;
+	margin-bottom: 117px;	
+}
+
+#contacts .contactbox {
+    background-color: #fff;
+    border: 3px solid #5d6676;
+    border-radius: 2px;
+    margin: 0 auto;
+    max-width: 1170px;
+    padding: 35px 30px 55px;
+}
+
+#contacts .contactbox .title {
+	font-family: 'PTSerifRegular';
+	margin-bottom: 30px;
+	color: #353535;
+	font-size: 40px;
+	width: 100%;
+}
+
+#contacts .contactbox .photo {
+	width:100px;
+	height: 100px;
+	border-radius: 50%;
+	overflow:hidden;
+	margin-right: 50px;
+}
+
+#contacts .contactbox .photo img {
+	width:100%;
+}
+
+#contacts .contactbox .description{
+	font-size: 16px;
+	line-height: 25px;	
+}
+
+
+#footer{
+	background-color: #5d6676;
+	color: #FFF;
+	font-size: 16px;
+	padding-bottom: 30px;
+	padding-top: 30px;	
+}
+
+
+
+/*****************************/
+/* Форрмы обратной связи     */
+/*****************************/
+
+input[type="text"] { 
+	display: inline-block; 
+	width: 330px; 
+	height: 40px;
+	margin-bottom: 22px; 
+	border: 1px solid #5d6676; 
+	padding: 12px 14px;
+	font-size: 16px;
+	color: #353535;
+	border-radius: 3px;
+}
+
+input.error { 
+	border: 1px solid #ff0000; 
+	color: #a35959; 
+	background: #FFF url('../images/sign.png') 310px 11px no-repeat;
+}
+
+input.error:focus { 
+    color: #353535;
+    border-color: #5d6676;
+    padding: 12px 14px;
+    font-size: 16px;
+}
+
+button,
+input[type="submit"] { 
+	border-radius: 3px;
+	background-color: #60a701;
+	width: 200px;
+	height: 40px;
+	color: #FFFFFF;
+	font-size: 16px;
+	border-left: none;
+	border-right: none;
+	border-top: none;
+	border-bottom: 3px solid #528e01;
+	line-height: 39px;
+	text-align: center;
+}
+
+button:hover,
+input[type="submit"]:hover {
+	background-color: #7fc52f;
+}
+
+.form_disabled{ position:relative;}
+.form_disabled:before{
+	content:'';
+	position:absolute;
+	width:100%;
+	height:100%;
+	z-index: 10;	
+}
+
+.form_disabled button,
+.form_disabled input[type="submit"]{
+	background-color: #808285;
+	border-color:#68696c;
+}
+
+.form_disabled input[type="text"]{
+	opacity: 0.6;	
+}
+
+
+.form_itself  input[type="text"] { 
+	margin-right: 10px;
+	width: 320px;
+}
+
+/*****************************/
+/* Стилизация модального окна /
+/*****************************/
+
+.modalwinwow {
+    display: none;
+    overflow: hidden;
+}
+
+.modalwinwow .head{
+	height: 172px;
+    background-color: rgba(93, 102, 118, 0.702);
+	width:100%;
+}
+
+.modalwinwow .head .head_box{
+	color:#FFF;
+	position: relative;
+    top: 45px;
+    left: 30px;	
+}
+
+.modalwinwow .head .photo{
+	width: 150px;
+    height: 150px;
+	border:4px solid #FFF;
+    border-radius: 50%;
+    overflow: hidden;
+	float:left;
+	margin-right: 25px;
+}
+
+.modalwinwow .head .title{
+	float:left;
+	font-size:20px;
+	margin-top:60px;
+	line-height: 22px;
+}
+
+.modalwinwow .head .title i {
+	font-size:16px;
+}
+
+.modalwinwow .body{
+	padding: 50px 60px 70px 60px;
+	background-color: #ffffff;
+	width:460px;
+	color: #353535;
+    font-size: 18px;
+	line-height:24px;	
+}
+
+.modalwinwow form{
+	margin-top: 33px;	
+}
+
+.modalwinwow a{
+	color: #008ACE;
+	border-bottom:1px solid;
+}
+
+.modalwinwow a:hover{
+	text-decoration: none;
+    color: #353535;
+}
+
+.modalwinwow .success{
+    background: url('../images/ok.png') 50% 0;
+    background-repeat: no-repeat;
+    padding-top: 120px;
+    margin-top: 40px;
+    margin-bottom: 65px;
+}
