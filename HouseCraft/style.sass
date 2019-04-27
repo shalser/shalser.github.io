@@ -1,0 +1,526 @@
+* 
+    margin: 0px
+    padding: 0px
+    box-sizing: border-box  
+
+@import 'sass/_adaptive.sass'
+    
+
+.main
+    position: relative
+    width: 100%
+    height: 882px
+    z-index: 0
+.container
+    height: 882px
+    position: absolute
+    z-index: 5
+    bottom: 0px
+    &-header
+        width: 100%
+        height: 56px
+        display: flex
+        justify-content: center
+        align-items: center
+        &-nav
+            align-items: center
+            max-width: 80%
+            position: absolute
+            z-index: 6
+nav ul     
+    display: flex 
+    list-style: none
+    font-family: "Exo 2.0 Semibold"
+    font-size: 16px
+    font-weight: 400
+    line-height: 28px 
+nav li
+    padding: 67px
+    font-family: "Exo 2.0 Semibold"
+    font-size: 16px
+    font-weight: 400
+    line-height: 28px 
+    &.left
+        padding-left: 0px
+    &.right
+        padding-right: 0px    
+a
+    text-decoration: none
+    color: #000000
+a:hover
+    color: #dd2c14    
+    //end header 
+
+
+    // section 
+.section
+    display: flex
+    align-items: center
+    justify-content: center
+    &-logo
+        min-width: 1139px
+        max-height: 68px
+        display: flex
+        justify-content: space-between
+        &-imgText
+            display: flex
+            align-items: center
+            margin-top: 44px 
+        &-text
+            margin-left: 17px
+            width: 210px
+            height: 40px
+            color: #000000
+            font-family: "Exo 2"
+            font-size: 17px
+            font-weight: 700
+            line-height: 24px
+            text-transform: uppercase  
+        &-telText 
+            margin-top: 35px
+            display: flex
+            flex-direction: column
+            text-align: right
+        &-number
+            width: 178px
+            height: 20px
+            color: #000000
+            font-family: "Exo 2"
+            font-size: 20px
+            font-weight: 700
+            line-height: 24px
+            text-transform: uppercase    
+        &-orderCall
+            display: flex
+            justify-content: flex-end
+            width: 178px
+            height: 10px
+            color: #dd2c14
+            font-family: "Exo 2"
+            font-size: 14px
+            font-weight: 400
+            line-height: 20px
+            cursor: pointer
+        &-orderCall:hover
+            font-weight: 700    
+// end section
+
+
+    // section guarantee
+.guarantee 
+    padding-top: 80px
+    padding-left: 390px
+    &-label
+        background: url(../img/Shape_1.png)
+        width: 620px
+        height: 243px 
+        &-text
+            width: 650px
+            height: 151px
+            color: #ffffff
+            font-family: "Exo 2"
+            font-size: 36px
+            font-weight: 700
+            text-transform: uppercase  
+            padding: 24px 46px 93px 36px  
+            overflow: hidden
+// end section guarantee
+
+
+    // section advantages
+
+.advantages-block1
+    background: url(../img/Rectangle.png)
+    width: 697px
+    height: 73px
+    margin-left: 390px
+    margin-top: 73px
+    display: flex
+    align-items: center
+    &-img
+        margin-left: 18px 
+        margin-top: 5px
+    &-text
+        width: 215px
+        height: 42px
+        align-items: center
+        color: #ffffff
+        font-family: "Exo 2"
+        font-size: 14px
+        font-weight: 400
+        line-height: 20px
+        margin-left: 16px 
+        overflow: hidden   
+    &-title
+        width: 215px
+        height: 18px
+        color: #fefefe
+        font-family: "Exo 2"
+        font-size: 24px
+        font-weight: 700
+        text-transform: uppercase 
+    &-subtitle
+        width: 200px
+        height: 12px
+        color: #ffffff
+        font-family: "Exo 2"
+        font-size: 14px
+        font-weight: 400
+        line-height: 20px  
+        margin-top: 5px
+.advantages-block2
+    background: url(../img/Rectangle.png)
+    width: 697px
+    height: 73px
+    margin-left: 390px
+    margin-top: 24px
+    display: flex
+    align-items: center
+    &-img
+        margin-left: 14px
+        margin-top: 3px
+    &-text
+        width: 167px
+        height: 37px
+        align-items: center
+        color: #ffffff
+        font-family: "Exo 2"
+        font-size: 14px
+        font-weight: 400
+        line-height: 20px
+        margin-left: 16px
+        overflow: hidden
+    &-title
+        width: 150px
+        height: 21px
+        color: #fefefe
+        font-family: "Exo 2"
+        font-size: 24px
+        font-weight: 700
+        text-transform: uppercase 
+    &-subtitle
+        width: 200px
+        height: 13px
+        color: #ffffff
+        font-family: "Exo 2"
+        font-size: 14px
+        font-weight: 400
+        line-height: 20px  
+.advantages-block3
+    background: url(../img/Rectangle.png)
+    width: 697px
+    height: 73px
+    margin-left: 390px
+    margin-top: 23px
+    display: flex
+    align-items: center
+    &-img
+        margin-left: 13px
+        margin-top: 8px
+    &-text
+        width: 250px
+        height: 38px
+        align-items: center
+        color: #ffffff
+        font-family: "Exo 2"
+        font-size: 14px
+        font-weight: 400
+        line-height: 20px
+        margin-left: 16px
+        overflow: hidden
+    &-title
+        width: 250px
+        height: 21px
+        color: #fefefe
+        font-family: "Exo 2"
+        font-size: 24px
+        font-weight: 700
+        text-transform: uppercase 
+    &-subtitle
+        width: 250px
+        height: 13px
+        color: #ffffff
+        font-family: "Exo 2"
+        font-size: 14px
+        font-weight: 400
+        line-height: 20px  
+        //   end advantage
+
+            // man-img
+.man-img
+    background: url(../img/man-min.png)
+    width: 690px
+    height: 595px
+    position: relative
+    bottom: 499px
+    left: 577px
+    // end man-img
+
+//  form
+.form
+    background: url(../img/form.png)
+    width: 363px
+    height: 390px  
+    position: relative
+    bottom: 933px
+    left: 1167px 
+    display: flex
+    flex-direction: column 
+    align-items: center
+    &-title
+        margin-top: 23px
+        text-align: center
+        width: 190px
+        height: 75px
+        color: #000000
+        font-family: "Exo 2"
+        font-size: 24px
+        font-weight: 700
+        text-transform: uppercase
+        overflow: hidden
+    &-subtitle
+        
+        text-align: center
+        width: 288px
+        height: 40px
+        color: #000000
+        font-family: "Exo 2"
+        font-size: 14px
+        font-weight: 400
+        line-height: 18px 
+        overflow: hidden
+    &-mail   
+        margin-top: 16px
+        width: 287px
+        height: 44px
+        border: 1px solid #c9c9c6
+        background-color: #eef2f5
+        padding: 10px 14px 10px 55px
+        position: relative
+    &-tel
+        margin-top: 17px
+        width: 287px
+        height: 44px
+        border: 1px solid #c9c9c6
+        background-color: #eef2f5
+        padding: 10px 14px 10px 55px
+        position: relative   
+    &-button
+        margin-top: 23px 
+        width: 287px
+        height: 44px
+        color: #ffffff
+        font-family: "Exo 2"
+        font-size: 24px
+        font-weight: 700
+        text-transform: uppercase
+        background-color: #dd2c14
+        border: none
+        padding: 6px 32px
+        text-align: center
+        text-decoration: none 
+        cursor: pointer
+    &-button:focus
+        outline: none 
+    &-button:hover
+        background-color: #ffffff
+        color: #dd2c14                       
+    &-privacy
+        margin-top: 25px
+        display: flex
+.form-tel input
+    width: 230px
+    position: relative
+    right: 50px
+    height: 32px
+    bottom: 5px  
+    background-color: #eef2f5
+    border: none 
+.form-tel input:focus
+    outline: none
+.form-mail input
+    width: 230px 
+    position: relative
+    right: 50px   
+    height: 32px
+    bottom: 5px
+    background-color: #eef2f5
+    border: none
+.form-mail input:focus
+    outline: none 
+.form-checkbox input
+    color: #dd2c14
+    margin-left: 13px
+    width: 15px
+    height: 15px
+    border: 1px solid #cacac6
+    background-color: #ffffff
+.privacy-text
+
+    width: 275px
+    height: 11px
+    color: #999999
+    font-family: "ProximaNova-Regular", Roboto Slab
+    font-size: 13px
+    font-weight: 400
+   
+.icon-head
+    position: absolute
+    top: 50%
+    margin-left: 119px
+    margin-top: -27px
+    z-index: 1
+    color: #999999
+.icon-tel
+    position: absolute
+    top: 50%
+    margin-left: 120px
+    margin-top: 34px
+    z-index: 1
+    color: #999999             
+.icon-line-up
+    position: absolute
+    top: 50%
+    margin-left: 97px
+    margin-top: 20px
+    z-index: 1
+    color: #999999
+.icon-line-down
+    position: absolute
+    top: 50%
+    margin-left: 97px
+    margin-top: -41px
+    z-index: 1
+    color: #999999    
+
+
+
+// form-container
+// Стилизация checkbox
+
+.form-container 
+  display: block
+  position: relative
+  padding-left: 35px
+  margin-bottom: 12px
+  cursor: pointer
+  font-size: 22px
+  user-select: none
+
+
+.form-container input 
+  position: absolute
+  opacity: 0
+  cursor: pointer
+  height: 0
+  width: 0
+
+
+.checkmark 
+  position: absolute
+  top: 0
+  left: 11px
+  height: 15px
+  width: 15px
+  background-color: #c1b8b8
+
+
+// .containe:hover input ~ .checkmark 
+//   background-color: #ccc
+
+
+.form-container input:checked ~ .checkmark 
+  background-color: #dd2c14
+
+
+.checkmark:after 
+  content: ""
+  position: absolute
+  display: none
+
+
+.form-container input:checked ~ .checkmark:after 
+  display: block
+
+
+.form-container .checkmark:after 
+  width: 9px
+  height: 9px
+  border: solid #ffffff
+  //   left: 9px
+//   top: 5px
+//   border-width: 0 3px 3px 0
+
+    // overlay Модальное окно
+
+.overlay
+    position: fixed
+    top: 0
+    width: 100%
+    height: 100%
+    background-color: rgba(0, 0, 0, 0.4)
+    display: none
+    z-index: 7 
+.popup-title
+    margin-top: 23px
+    text-align: center
+    width: 190px
+    height: 75px
+    color: #000000
+    font-family: "Exo 2"
+    font-size: 24px
+    font-weight: 700
+    text-transform: uppercase
+    overflow: hidden  
+    position: relative
+    left: 44px      
+.popup-close
+    position: absolute
+    right: 780px
+    top: 184px
+    color: #000000
+    font-size: 35px
+    font-weight: 300
+    cursor: pointer
+    z-index: 9
+.popup-form
+    position: relative
+    background-size: cover
+    padding: 35px 88px 50px 88px
+    color: #000000
+    left: 697px
+    top: 153px
+.form-overlay
+    position: relative
+    bottom: 390px
+    left: 37px                               
+.icon-head-overlay
+    position: absolute
+    top: 50%
+    margin-left: 257px
+    margin-top: -26px
+    z-index: 1
+    color: #999999
+.icon-tel-overlay  
+    position: absolute
+    top: 50%
+    margin-left: 257px
+    margin-top: 35px
+    z-index: 1
+    color: #999999 
+.icon-line-up-overlay
+    position: absolute
+    top: 50%
+    margin-left: 243px
+    margin-top: -39px
+    z-index: 1
+    color: #999999
+.icon-line-down-overlay 
+    position: absolute
+    top: 50%
+    margin-left: 243px
+    margin-top: 22px
+    z-index: 1
+    color: #999999 
+#privacy
+    margin-left: -12px        
