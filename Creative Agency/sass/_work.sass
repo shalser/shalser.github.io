@@ -1,0 +1,93 @@
+.wrapper-work
+    width: 100%
+    height: 905px
+    display: flex
+    justify-content: center
+.work
+    width: 70%
+    max-width: 1318px
+    max-height: 905px
+    &-menu
+        margin-top: 116px
+        justify-content: center
+        display: flex
+        & ul
+            width: 500px
+            display: flex
+            justify-content: space-between
+            list-style: none
+            height: 10px
+            color: #505050
+            font-size: 14px
+            font-weight: 700
+            line-height: 24px
+            text-transform: uppercase
+            & li
+                position: relative
+    
+            & li::before
+                content: ''
+                bottom: 0
+                right: 0  
+                position: absolute
+                width: 100%
+                height: 2px
+                background-color: #ffe400
+                transition: 0.2s
+                transform: scaleX(0)
+                top: 25px
+            & li:hover:before 
+                width: 100%
+                transform: scaleX(1)
+    &-img
+        width: 1318px
+        height: 750px
+        margin-top: 70px
+        display: flex
+        flex-wrap: wrap
+        justify-content: center
+        
+
+              
+    &-text
+        width: 230px
+        height: 10px
+        color: #505050
+        font-size: 14px
+        font-weight: 700
+        line-height: 30px
+        text-transform: uppercase    
+        margin-top: 50px 
+        display: flex
+        justify-content: space-between
+        margin-left: 450px
+        &_text
+            position: relative
+            z-index: 1
+            right: 30px
+            top: 9px
+    &-img_yellow
+        background: url(../img/work/bg.png)
+        width: 95px
+        height: 47px
+        position: relative
+        z-index: 0
+        left: 50px
+
+      
+
+
+
+
+     
+            
+
+
+               
+
+            
+
+
+
+
+
