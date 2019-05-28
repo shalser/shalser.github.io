@@ -46,39 +46,39 @@ $(document).ready(function() {
     });
   });   
 
-  $(document).ready(function() {
- 
-    $(window).resize(function(){
-      var windowWidth = $(window).width();
-      if(windowWidth > 992)$(".services-carts_cart").addClass("wow bounceInRight");
-      else $(".services-carts_cart").removeClass("wow bounceInRight");
-    });
-  });  
-
-  $(document).ready(function() {
- 
-    $(window).resize(function(){
-      var windowWidth = $(window).width();
-      if(windowWidth > 992)$(".services-carts_cart").addClass("wow bounceInDown");
-      else $(".services-carts_cart").removeClass("wow bounceInDown");
-    });
-  });
-
-  $(document).ready(function() {
- 
-    $(window).resize(function(){
-      var windowWidth = $(window).width();
-      if(windowWidth > 992)$(".services-carts_cart").addClass("wow bounceInLeft");
-      else $(".services-carts_cart").removeClass("wow bounceInLeft");
-    });
-  });  
-
-
-  $(document).ready(function() {
- 
-    $(window).resize(function(){
-      var windowWidth = $(window).width();
-      if(windowWidth > 992)$(".services-carts-down").addClass("wow bounceInUp");
-      else $(".services-carts-down").removeClass("wow bounceInUp");
-    });
-  });   
+  // $(document).ready(function() {
+  //
+  //   $(window).resize(function(){
+  //     var windowWidth = $(window).width();
+  //     if(windowWidth > 992)$(".services-carts_cart").addClass("wow bounceInRight");
+  //     else $(".services-carts_cart").removeClass("wow bounceInRight");
+  //   });
+  // });
+  //
+  // $(document).ready(function() {
+  //
+  //   $(window).resize(function(){
+  //     var windowWidth = $(window).width();
+  //     if(windowWidth > 992)$(".services-carts_cart").addClass("wow bounceInDown");
+  //     else $(".services-carts_cart").removeClass("wow bounceInDown");
+  //   });
+  // });
+  //
+  // $(document).ready(function() {
+  //
+  //   $(window).resize(function(){
+  //     var windowWidth = $(window).width();
+  //     if(windowWidth > 992)$(".services-carts_cart").addClass("wow bounceInLeft");
+  //     else $(".services-carts_cart").removeClass("wow bounceInLeft");
+  //   });
+  // });
+  //
+  //
+  // $(document).ready(function() {
+  //
+  //   $(window).resize(function(){
+  //     var windowWidth = $(window).width();
+  //     if(windowWidth > 992)$(".services-carts-down").addClass("wow bounceInUp");
+  //     else $(".services-carts-down").removeClass("wow bounceInUp");
+  //   });
+  // });
