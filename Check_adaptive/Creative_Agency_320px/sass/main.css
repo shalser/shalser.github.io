@@ -1,0 +1,222 @@
+*, *:before, *:after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Raleway', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #505050;
+}
+
+a:hover {
+  color: #ffe400;
+}
+
+.cancel_a:hover {
+  color: #505050;
+}
+
+.rights {
+  width: 100%;
+  height: 13px;
+  color: #505050;
+  font-size: 14px;
+  font-weight: 400;
+  margin-top: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 50px;
+}
+
+.wrapper-header {
+  width: 320px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.header {
+  width: 320px;
+  height: auto;
+}
+
+.header-left_block {
+  width: 320px;
+  height: auto;
+}
+
+.header-left_block-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header-left_block-title_text {
+  width: 120px;
+  height: 19px;
+  color: #505050;
+  font-family: 'Raleway', sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 30px;
+  text-transform: uppercase;
+  margin-left: 29px;
+  margin-top: 34px;
+}
+
+.header-left_block-subtitle_text {
+  width: 63px;
+  height: 10px;
+  color: #505050;
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 30px;
+  text-transform: uppercase;
+  margin-left: 95px;
+  margin-top: 35px;
+}
+
+.header-left_block-middle_text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header-left_block-middle_text-left {
+  width: 315px;
+  height: 10px;
+  color: #505050;
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 30px;
+  text-transform: uppercase;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transform: rotate(270deg);
+  transform: rotate(270deg);
+  -webkit-transform-origin: left top 0;
+          transform-origin: left top 0;
+  margin-left: 39px;
+  margin-top: 150px;
+}
+
+.header-left_block-middle_text-right {
+  width: 130px;
+  height: 10px;
+  color: #505050;
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 30px;
+  text-transform: uppercase;
+  margin-top: 204px;
+  margin-left: 0px;
+}
+
+.header-left_block-middle_text-right::before {
+  content: url("../img/header/creative_border.png");
+  vertical-align: super;
+  margin-left: -17px;
+  padding-right: 8px;
+}
+
+.header-left_block-center_text-title {
+  width: 320px;
+  height: 28px;
+  color: #505050;
+  font-family: 'Raleway', sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 30px;
+  margin-left: 17px;
+  -webkit-transform: rotate(320deg);
+  transform: rotate(320deg);
+  -webkit-transform-origin: left top 0;
+          transform-origin: left top 0;
+}
+
+.header-left_block-center_text-title_down-text {
+  width: 298px;
+  height: 56px;
+  color: #505050;
+  font-family: 'Raleway', sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 30px;
+  margin-left: 19px;
+  margin-top: 0px;
+  -webkit-transform: rotate(10deg);
+  transform: rotate(10deg);
+  -webkit-transform-origin: left top 0;
+          transform-origin: left top 0;
+}
+
+.header-left_block-center_text-subtitle_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 37px;
+}
+
+.header-left_block-center_text-subtitle {
+  width: 255px;
+  height: 10px;
+  color: #505050;
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 30px;
+  text-transform: uppercase;
+  margin-left: -286px;
+  position: relative;
+  z-index: 1;
+  margin-top: 9px;
+}
+
+.header-left_block-center_text-subtitle_img {
+  background: url(../img/header/bg_yellow.png);
+  width: 95px;
+  height: 47px;
+  position: relative;
+  z-index: 0;
+  margin-left: 250px;
+}
+
+.header-left_block-social {
+  -webkit-transform: rotate(270deg);
+          transform: rotate(270deg);
+  margin-left: 9px;
+  width: 85px;
+  height: 16px;
+  margin-top: 93px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.header-left_block-social_img {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+/*# sourceMappingURL=main.css.map */
