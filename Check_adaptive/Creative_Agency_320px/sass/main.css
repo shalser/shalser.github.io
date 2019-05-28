@@ -37,12 +37,6 @@ a:hover {
 
 .wrapper-header {
   width: 320px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 .header {
@@ -59,6 +53,7 @@ a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 320px;
 }
 
 .header-left_block-title_text {
@@ -91,6 +86,7 @@ a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 320px;
 }
 
 .header-left_block-middle_text-left {
@@ -133,6 +129,10 @@ a:hover {
   padding-right: 8px;
 }
 
+.header-left_block-center_text {
+  width: 320px;
+}
+
 .header-left_block-center_text-title {
   width: 320px;
   height: 28px;
@@ -172,7 +172,7 @@ a:hover {
 }
 
 .header-left_block-center_text-subtitle {
-  width: 255px;
+  width: 100px;
   height: 10px;
   color: #505050;
   font-family: 'Raleway', sans-serif;
