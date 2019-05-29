@@ -2073,7 +2073,7 @@ header {
     width: 320px;
     height: 20px;
     color: #505050;
-    font-size: 28px;
+    font-size: 32px;
     font-weight: 400;
     margin-top: 55px;
     text-align: center;
@@ -2082,9 +2082,9 @@ header {
     width: 320px;
     height: 13px;
     color: #505050;
-    font-size: 14px;
+    font-size: 17px;
     font-weight: 400;
-    margin-top: 14px;
+    margin-top: 65px;
     text-align: center;
   }
   .subscribe-w320-right_form-input {
@@ -2123,11 +2123,14 @@ header {
     cursor: pointer;
     outline: none;
   }
+  div.subscribe-w320-left_title {
+    margin-top: 5px !important;
+  }
   div.services-carts_cart {
     visibility: visible !important;
   }
   .rights {
-    margin-left: 0;
+    margin-left: -12px;
     margin-top: 1800px;
   }
 }
