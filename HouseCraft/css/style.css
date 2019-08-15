@@ -6,6 +6,9 @@
 }
 
 @media (max-width: 2560px) {
+    .main-img-adaptive {
+        display: none;
+    }
     ul.menu-adaptive {
         display: none;
     }
@@ -62,162 +65,19 @@
     }
 }
 
-@media (max-width: 730px) {
-    nav ul li {
-        font-size: 35px;
-        padding: 41px;
+@media (max-width: 1024px) {
+    .main-img {
+        display: none;
     }
-    div.advantages-blocks {
-        margin-left: -143px;
+    .main-img-adaptive {
+        display: block;
+        width: 1690px;
     }
-    .advantages-block1-img img,
-    .advantages-block2-img img,
-    .advantages-block3-img img {
-        width: 55px;
-    }
-    div.advantages-block1-text {
-        height: 55px;
-    }
-    div.advantages-block1-subtitle, div.advantages-block2-subtitle, div.advantages-block3-subtitle {
-        font-size: 23px;
-        line-height: 34px;
-        width: 400px;
-    }
-    div.advantages-block2-text {
-        width: 367px;
-        height: 50px;
-    }
-    div.section-logo-number {
-        width: 428px;
-        height: 24px;
-        font-size: 41px;
-    }
-    div.section-logo-orderCall {
-        width: 433px;
-        font-size: 43px;
-        margin-top: 15px;
-    }
-    div.section-logo-text {
-        font-size: 35px;
-        line-height: 38px;
-        width: 407px;
-    }
-    div.section-logo-img img {
-        width: 110px;
-        margin-top: 15px;
-    }
-    div.section-logo-telText {
-        margin-left: 505px;
-    }
-    form.form {
-        width: 524px;
-        height: 674px;
-        bottom: 1175px;
-        left: 1167px;
-    }
-    div.form-title {
-        margin-top: 24px;
-        width: 377px;
-        height: 145px;
-        font-size: 44px;
-    }
-    div.form-subtitle {
-        width: 491px;
-        height: 183px;
-        font-size: 40px;
-        font-weight: 400px;
-        line-height: 42px;
-    }
-    div.form-mail {
-        width: 466px;
-        height: 63px;
-    }
-    div.form-mail p {
-        width: 330px;
-        right: 48px;
-        height: 50px;
-    }
-    div.form-mail input {
-        font-size: 30px;
-        width: 348px;
-        right: 50px;
-        height: 50px;
-    }
-    div.form-tel {
-        width: 466px;
-        height: 63px;
-    }
-    div.form-tel input {
-        font-size: 30px;
-        width: 348px;
-        right: 50px;
-        height: 50px;
-    }
-    div.icon-tel {
-        margin-left: 202px;
-        margin-top: 85px;
-    }
-    div.icon-tel img {
-        width: 45px;
-    }
-    div.icon-line-up {
-        margin-left: 168px;
-        margin-top: -4px;
-    }
-    div.icon-line-up img {
-        width: 2px;
-        height: 65px;
-    }
-    div.icon-line-down {
-        margin-left: 168px;
-        margin-top: 75px;
-    }
-    div.icon-line-down img {
-        width: 2px;
-        height: 65px;
-    }
-    div.icon-head {
-        margin-left: 200px;
-        margin-top: 5px;
-    }
-    div.icon-head img {
-        width: 45px;
-    }
-    button.form-button {
-        width: 324px;
-        height: 70px;
-        font-size: 34px;
-    }
-    span.checkmark {
-        top: 18px;
-        left: 12px;
-        height: 40px;
-        width: 40px;
-    }
-    span.checkmark:after {
-        width: 32px !important;
-        height: 32px !important;
-        border: 5px solid #ffffff !important;
-    }
-    div.privacy-text {
-        width: 385px;
-        height: 86px;
-        font-size: 34px;
-    }
-    label.form-container {
-        padding-left: 97px;
-    }
-}
-
-@media (max-width: 500px) {
     ul.menu-adaptive {
         display: block;
     }
     button.adaptive {
         display: block;
-    }
-    div.main .main-img {
-        width: 6000px;
     }
     div.container {
         height: 1103px;
@@ -231,20 +91,31 @@
         list-style: none;
     }
     ul a {
-        color: #000000;
+        color: #ffffff;
     }
     button.adaptive {
         position: relative;
         bottom: 2544px;
     }
     ul.menu-adaptive {
+        background-color: rgba(0, 0, 0, 0.5);
         position: relative;
         bottom: 2506px;
+        height: 2600px;
     }
     button {
-        width: 204px;
+        width: 405px;
         height: 100px;
-        font-size: 45px;
+        background-color: #f15141;
+        border-radius: 21px;
+        color: #ffffff;
+        font-weight: 700;
+        font-size: 63px;
+        border: none;
+        outline: none;
+    }
+    button:focus {
+        background-color: #503f3e;
     }
     section.section {
         margin-top: 100px;
@@ -255,7 +126,7 @@
         -webkit-box-direction: normal;
         -ms-flex-direction: column;
         flex-direction: column;
-        width: 1136px;
+        width: 912px;
     }
     div.section-logo {
         min-width: 1139px;
@@ -307,7 +178,7 @@
     }
     section.guarantee {
         padding-top: 1292px;
-        padding-left: 230px;
+        padding-left: 123px;
     }
     .menu-adaptive {
         display: none;
@@ -326,7 +197,7 @@
         width: 1900px;
     }
     div.advantages-blocks {
-        margin-left: 0;
+        margin-left: -96px;
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -386,12 +257,1827 @@
     div.popup-form img.img-popup {
         width: 940px;
     }
+    .main-img-adaptive {
+        display: block;
+        width: 1523px;
+    }
+    section.section {
+        width: 768px;
+    }
+    section.guarantee {
+        padding-left: 34px;
+    }
+    div.advantages-blocks {
+        margin-left: -176px;
+    }
+    div.popup-title {
+        margin-top: -596px;
+        text-align: center;
+        width: 803px;
+        height: 212px;
+        color: #000000;
+        font-family: "Exo 2";
+        font-size: 82px;
+        font-weight: 700;
+        text-transform: uppercase;
+        overflow: hidden;
+        position: relative;
+        left: 44px;
+    }
+    div.form-subtitle {
+        width: 833px;
+        height: 273px;
+        font-size: 70px;
+        font-weight: 400;
+        line-height: 64px;
+    }
+    div.form-mail input {
+        font-size: 88px;
+        width: 839px;
+        right: 50px;
+        height: 121px;
+    }
+    div.form-tel input {
+        font-size: 88px;
+        width: 839px;
+        right: 50px;
+        height: 121px;
+    }
+    div.form-mail {
+        width: 869px;
+        height: 135px;
+    }
+    div.form-tel {
+        width: 869px;
+        height: 135px;
+    }
+    div.privacy-text {
+        width: 890px;
+        height: 201px;
+        font-size: 34px;
+    }
+    span.checkmark {
+        top: 3px;
+        left: 31px;
+    }
+    div.popup-close {
+        position: absolute;
+        right: 177px;
+        top: 505px;
+        color: #000000;
+        font-size: 241px;
+        font-weight: 700;
+        cursor: pointer;
+        z-index: 9;
+    }
+    div.icon-head-overlay > img {
+        width: 100px;
+    }
+    div.icon-tel-overlay > img {
+        width: 100px;
+    }
+    div.icon-head-overlay {
+        position: absolute;
+        top: 50%;
+        margin-left: 763px;
+        margin-top: -35px;
+        z-index: 1;
+        color: #999999;
+    }
+    div.icon-tel-overlay {
+        position: absolute;
+        top: 50%;
+        margin-left: 763px;
+        margin-top: 119px;
+        z-index: 1;
+        color: #999999;
+    }
+    div.icon-line-up-overlay > img {
+        width: 3px;
+    }
+    div.icon-line-up-overlay {
+        position: absolute;
+        top: 50%;
+        margin-left: 748px;
+        margin-top: -50px;
+        z-index: 1;
+        color: #999999;
+    }
+    div.icon-line-down-overlay > img {
+        width: 3px;
+    }
+    div.icon-line-down-overlay {
+        position: absolute;
+        top: 50%;
+        margin-left: 748px;
+        margin-top: 101px;
+        z-index: 1;
+        color: #999999;
+    }
+}
+
+@media (max-width: 768px) {
+    .main-img {
+        display: none;
+    }
+    .main-img-adaptive {
+        display: block;
+        width: 1690px;
+    }
+    ul.menu-adaptive {
+        display: block;
+    }
+    button.adaptive {
+        display: block;
+    }
+    div.container {
+        height: 1103px;
+        position: absolute;
+        z-index: 5;
+        bottom: 0px;
+    }
+    ul {
+        font-size: 145px;
+        padding: 41px;
+        list-style: none;
+    }
+    ul a {
+        color: #ffffff;
+    }
+    button.adaptive {
+        position: relative;
+        bottom: 2544px;
+    }
+    ul.menu-adaptive {
+        background-color: rgba(0, 0, 0, 0.5);
+        position: relative;
+        bottom: 2506px;
+        height: 2600px;
+    }
+    button {
+        width: 405px;
+        height: 100px;
+        background-color: #f15141;
+        border-radius: 21px;
+        color: #ffffff;
+        font-weight: 700;
+        font-size: 63px;
+        border: none;
+        outline: none;
+    }
+    button:focus {
+        background-color: #503f3e;
+    }
+    section.section {
+        margin-top: 100px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        width: 912px;
+    }
+    div.section-logo {
+        min-width: 1139px;
+        max-height: 68px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+    div.section-logo-text {
+        font-size: 121px;
+        line-height: 119px;
+        width: 695px;
+        height: 298px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+    }
+    div.section-logo-orderCall {
+        width: 1554px;
+        font-size: 94px;
+        margin-top: 82px;
+        font-weight: 700;
+    }
+    div.section-logo-number {
+        width: 1595px;
+        height: 30px;
+        font-size: 98px;
+    }
+    div.section-logo-img img {
+        width: 334px;
+        margin-left: 775px;
+    }
+    div.section-logo-telText {
+        margin-left: 0;
+    }
+    div.section-logo-imgText {
+        margin-top: 300px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+    section.guarantee {
+        padding-top: 1292px;
+        padding-left: 123px;
+    }
+    .menu-adaptive {
+        display: none;
+    }
+    div.man-img {
+        display: none;
+    }
+    form.form {
+        display: none;
+    }
+    header.container-header {
+        display: none;
+    }
+    header.container-header img {
+        height: 202px;
+        width: 1900px;
+    }
+    div.advantages-blocks {
+        margin-left: -96px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+    div.advantages-block1,
+    div.advantages-block2,
+    div.advantages-block3 {
+        height: 247px;
+        width: 1101px;
+    }
+    .advantages-block1-img img,
+    .advantages-block2-img img,
+    .advantages-block3-img img {
+        width: 174px;
+    }
+    div.advantages-block1-text,
+    div.advantages-block2-text,
+    div.advantages-block3-text {
+        height: 155px;
+        width: 815px;
+        margin-left: 45px;
+    }
+    div.advantages-block1-title,
+    div.advantages-block2-title,
+    div.advantages-block3-title {
+        font-size: 100px;
+        margin-top: 28px;
+    }
+    div.advantages-block1-subtitle, div.advantages-block2-subtitle, div.advantages-block3-subtitle {
+        font-size: 64px;
+        width: 1000px;
+        margin-top: 53px;
+    }
+    div.guarantee-label {
+        background: url(../img/Shape_1.jpg);
+        width: 1451px;
+        height: 456px;
+    }
+    div.guarantee-label-text {
+        text-align: center;
+        width: 1460px;
+        height: 1155px;
+        font-size: 98px;
+    }
+    div.popup-form {
+        position: relative;
+        background-size: cover;
+        padding: 35px 88px 50px 88px;
+        color: #000000;
+        left: 461px;
+        top: 153px;
+    }
+    div.popup-form img.img-popup {
+        width: 940px;
+    }
+    .main-img-adaptive {
+        display: block;
+        width: 1523px;
+    }
+    section.section {
+        width: 768px;
+    }
+    section.guarantee {
+        padding-left: 34px;
+    }
+    div.advantages-blocks {
+        margin-left: -176px;
+    }
+    div.popup-title {
+        margin-top: -596px;
+        text-align: center;
+        width: 803px;
+        height: 212px;
+        color: #000000;
+        font-family: "Exo 2";
+        font-size: 82px;
+        font-weight: 700;
+        text-transform: uppercase;
+        overflow: hidden;
+        position: relative;
+        left: 44px;
+    }
+    div.form-subtitle {
+        width: 833px;
+        height: 273px;
+        font-size: 70px;
+        font-weight: 400;
+        line-height: 64px;
+    }
+    div.form-mail input {
+        font-size: 88px;
+        width: 839px;
+        right: 50px;
+        height: 121px;
+    }
+    div.form-tel input {
+        font-size: 88px;
+        width: 839px;
+        right: 50px;
+        height: 121px;
+    }
+    div.form-mail {
+        width: 869px;
+        height: 135px;
+    }
+    div.form-tel {
+        width: 869px;
+        height: 135px;
+    }
+    div.privacy-text {
+        width: 890px;
+        height: 201px;
+        font-size: 34px;
+    }
+    span.checkmark {
+        top: 3px;
+        left: 31px;
+    }
+    div.popup-close {
+        position: absolute;
+        right: 177px;
+        top: 505px;
+        color: #000000;
+        font-size: 241px;
+        font-weight: 700;
+        cursor: pointer;
+        z-index: 9;
+    }
+    div.icon-head-overlay > img {
+        width: 100px;
+    }
+    div.icon-tel-overlay > img {
+        width: 100px;
+    }
+    div.icon-head-overlay {
+        position: absolute;
+        top: 50%;
+        margin-left: 763px;
+        margin-top: -35px;
+        z-index: 1;
+        color: #999999;
+    }
+    div.icon-tel-overlay {
+        position: absolute;
+        top: 50%;
+        margin-left: 763px;
+        margin-top: 119px;
+        z-index: 1;
+        color: #999999;
+    }
+    div.icon-line-up-overlay > img {
+        width: 3px;
+    }
+    div.icon-line-up-overlay {
+        position: absolute;
+        top: 50%;
+        margin-left: 748px;
+        margin-top: -50px;
+        z-index: 1;
+        color: #999999;
+    }
+    div.icon-line-down-overlay > img {
+        width: 3px;
+    }
+    div.icon-line-down-overlay {
+        position: absolute;
+        top: 50%;
+        margin-left: 748px;
+        margin-top: 101px;
+        z-index: 1;
+        color: #999999;
+    }
+}
+
+@media (min-width: 873px) and (max-width: 1023px) {
+    .main-img-adaptive {
+        display: block;
+        width: 1347px;
+    }
+    div.section-logo-img img {
+        width: 227px;
+    }
+    div.section-logo-text {
+        font-size: 94px;
+        line-height: 119px;
+        width: 284px;
+        height: 298px;
+    }
+    section.section {
+        width: 500px;
+    }
+    section.guarantee {
+        padding-left: 0px;
+    }
+    div.guarantee-label {
+        width: 1346px;
+        height: 367px;
+    }
+    div.guarantee-label-text {
+        text-align: center;
+        width: 1348px;
+        height: 1155px;
+        font-size: 86px;
+    }
+    div.advantages-blocks {
+        margin-left: -250px;
+    }
+    div.advantages-block1, div.advantages-block2, div.advantages-block3 {
+        height: 184px;
+        width: 1044px;
+    }
+    button.adaptive {
+        position: relative;
+        bottom: 2268px;
+    }
+    ul.menu-adaptive {
+        background-color: rgba(0, 0, 0, 0.5);
+        position: relative;
+        bottom: 2236px;
+        height: 2416px;
+    }
+    ul li {
+        font-size: 190px;
+    }
+    div.popup-form {
+        position: relative;
+        background-size: cover;
+        padding: 35px 88px 50px 88px;
+        color: #000000;
+        left: 67px;
+        top: 117px;
+    }
+    div.popup-title {
+        margin-top: -596px;
+        text-align: center;
+        width: 803px;
+        height: 212px;
+        color: #000000;
+        font-family: "Exo 2";
+        font-size: 82px;
+        font-weight: 700;
+        text-transform: uppercase;
+        overflow: hidden;
+        position: relative;
+        left: 44px;
+    }
+    div.form-subtitle {
+        width: 833px;
+        height: 273px;
+        font-size: 70px;
+        font-weight: 400;
+        line-height: 64px;
+    }
+    div.form-mail input {
+        font-size: 88px;
+        width: 839px;
+        right: 50px;
+        height: 121px;
+    }
+    div.form-tel input {
+        font-size: 88px;
+        width: 839px;
+        right: 50px;
+        height: 121px;
+    }
+    div.form-mail {
+        width: 869px;
+        height: 135px;
+    }
+    div.form-tel {
+        width: 869px;
+        height: 135px;
+    }
+    div.privacy-text {
+        width: 890px;
+        height: 201px;
+        font-size: 34px;
+    }
+    span.checkmark {
+        top: 3px;
+        left: 31px;
+    }
+    div.popup-close {
+        position: absolute;
+        right: 244px;
+        top: 77px;
+        color: #000000;
+        font-size: 241px;
+        font-weight: 700;
+        cursor: pointer;
+        z-index: 9;
+    }
+    div.icon-head-overlay > img {
+        width: 100px;
+    }
+    div.icon-tel-overlay > img {
+        width: 100px;
+    }
+    div.icon-head-overlay {
+        position: absolute;
+        top: 50%;
+        margin-left: 763px;
+        margin-top: -35px;
+        z-index: 1;
+        color: #999999;
+    }
+    div.icon-tel-overlay {
+        position: absolute;
+        top: 50%;
+        margin-left: 763px;
+        margin-top: 119px;
+        z-index: 1;
+        color: #999999;
+    }
+    div.icon-line-up-overlay > img {
+        width: 3px;
+    }
+    div.icon-line-up-overlay {
+        position: absolute;
+        top: 50%;
+        margin-left: 748px;
+        margin-top: -50px;
+        z-index: 1;
+        color: #999999;
+    }
+    div.icon-line-down-overlay > img {
+        width: 3px;
+    }
+    div.icon-line-down-overlay {
+        position: absolute;
+        top: 50%;
+        margin-left: 748px;
+        margin-top: 101px;
+        z-index: 1;
+        color: #999999;
+    }
+}
+
+@media (min-width: 650px) and (max-width: 873px) {
+    .main-img-adaptive {
+        display: block;
+        width: 1347px;
+    }
+    div.section-logo-img img {
+        width: 227px;
+    }
+    div.section-logo-text {
+        font-size: 94px;
+        line-height: 119px;
+        width: 284px;
+        height: 298px;
+    }
+    section.section {
+        width: 500px;
+    }
+    section.guarantee {
+        padding-left: 0px;
+    }
+    div.guarantee-label {
+        width: 1346px;
+        height: 367px;
+    }
+    div.guarantee-label-text {
+        text-align: center;
+        width: 1348px;
+        height: 1155px;
+        font-size: 86px;
+    }
+    div.advantages-blocks {
+        margin-left: -250px;
+    }
+    div.advantages-block1, div.advantages-block2, div.advantages-block3 {
+        height: 184px;
+        width: 1044px;
+    }
+    button.adaptive {
+        position: relative;
+        bottom: 2268px;
+    }
+    ul.menu-adaptive {
+        background-color: rgba(0, 0, 0, 0.5);
+        position: relative;
+        bottom: 2236px;
+        height: 2416px;
+    }
+    ul li {
+        font-size: 190px;
+    }
+    div.popup-form {
+        position: relative;
+        background-size: cover;
+        padding: 35px 88px 50px 88px;
+        color: #000000;
+        left: 67px;
+        top: 250px;
+    }
+    div.popup-title {
+        margin-top: -596px;
+        text-align: center;
+        width: 803px;
+        height: 212px;
+        color: #000000;
+        font-family: "Exo 2";
+        font-size: 82px;
+        font-weight: 700;
+        text-transform: uppercase;
+        overflow: hidden;
+        position: relative;
+        left: 44px;
+    }
+    div.form-subtitle {
+        width: 833px;
+        height: 273px;
+        font-size: 70px;
+        font-weight: 400;
+        line-height: 64px;
+    }
+    div.form-mail input {
+        font-size: 88px;
+        width: 839px;
+        right: 50px;
+        height: 121px;
+    }
+    div.form-tel input {
+        font-size: 88px;
+        width: 839px;
+        right: 50px;
+        height: 121px;
+    }
+    div.form-mail {
+        width: 869px;
+        height: 135px;
+    }
+    div.form-tel {
+        width: 869px;
+        height: 135px;
+    }
+    div.privacy-text {
+        width: 890px;
+        height: 201px;
+        font-size: 34px;
+    }
+    span.checkmark {
+        top: 3px;
+        left: 31px;
+    }
+    div.popup-close {
+        position: absolute;
+        right: 244px;
+        top: 212px;
+        color: #000000;
+        font-size: 241px;
+        font-weight: 700;
+        cursor: pointer;
+        z-index: 9;
+    }
+    div.icon-head-overlay > img {
+        width: 100px;
+    }
+    div.icon-tel-overlay > img {
+        width: 100px;
+    }
+    div.icon-head-overlay {
+        position: absolute;
+        top: 50%;
+        margin-left: 763px;
+        margin-top: -35px;
+        z-index: 1;
+        color: #999999;
+    }
+    div.icon-tel-overlay {
+        position: absolute;
+        top: 50%;
+        margin-left: 763px;
+        margin-top: 119px;
+        z-index: 1;
+        color: #999999;
+    }
+    div.icon-line-up-overlay > img {
+        width: 3px;
+    }
+    div.icon-line-up-overlay {
+        position: absolute;
+        top: 50%;
+        margin-left: 748px;
+        margin-top: -50px;
+        z-index: 1;
+        color: #999999;
+    }
+    div.icon-line-down-overlay > img {
+        width: 3px;
+    }
+    div.icon-line-down-overlay {
+        position: absolute;
+        top: 50%;
+        margin-left: 748px;
+        margin-top: 101px;
+        z-index: 1;
+        color: #999999;
+    }
+}
+
+@media (max-width: 500px) {
+    .main-img {
+        display: none;
+    }
+    .main-img-adaptive {
+        display: block;
+        width: 1690px;
+    }
+    ul.menu-adaptive {
+        display: block;
+    }
+    button.adaptive {
+        display: block;
+    }
+    div.container {
+        height: 1103px;
+        position: absolute;
+        z-index: 5;
+        bottom: 0px;
+    }
+    ul {
+        font-size: 145px;
+        padding: 41px;
+        list-style: none;
+    }
+    ul a {
+        color: #ffffff;
+    }
+    button.adaptive {
+        position: relative;
+        bottom: 2544px;
+    }
+    ul.menu-adaptive {
+        background-color: rgba(0, 0, 0, 0.5);
+        position: relative;
+        bottom: 2506px;
+        height: 2600px;
+    }
+    button {
+        width: 405px;
+        height: 100px;
+        background-color: #f15141;
+        border-radius: 21px;
+        color: #ffffff;
+        font-weight: 700;
+        font-size: 63px;
+        border: none;
+        outline: none;
+    }
+    button:focus {
+        background-color: #503f3e;
+    }
+    section.section {
+        margin-top: 100px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        width: 912px;
+    }
+    div.section-logo {
+        min-width: 1139px;
+        max-height: 68px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+    div.section-logo-text {
+        font-size: 121px;
+        line-height: 119px;
+        width: 695px;
+        height: 298px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+    }
+    div.section-logo-orderCall {
+        width: 1554px;
+        font-size: 94px;
+        margin-top: 82px;
+        font-weight: 700;
+    }
+    div.section-logo-number {
+        width: 1595px;
+        height: 30px;
+        font-size: 98px;
+    }
+    div.section-logo-img img {
+        width: 334px;
+        margin-left: 775px;
+    }
+    div.section-logo-telText {
+        margin-left: 0;
+    }
+    div.section-logo-imgText {
+        margin-top: 300px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+    section.guarantee {
+        padding-top: 1292px;
+        padding-left: 123px;
+    }
+    .menu-adaptive {
+        display: none;
+    }
+    div.man-img {
+        display: none;
+    }
+    form.form {
+        display: none;
+    }
+    header.container-header {
+        display: none;
+    }
+    header.container-header img {
+        height: 202px;
+        width: 1900px;
+    }
+    div.advantages-blocks {
+        margin-left: -96px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+    div.advantages-block1,
+    div.advantages-block2,
+    div.advantages-block3 {
+        height: 247px;
+        width: 1101px;
+    }
+    .advantages-block1-img img,
+    .advantages-block2-img img,
+    .advantages-block3-img img {
+        width: 174px;
+    }
+    div.advantages-block1-text,
+    div.advantages-block2-text,
+    div.advantages-block3-text {
+        height: 155px;
+        width: 815px;
+        margin-left: 45px;
+    }
+    div.advantages-block1-title,
+    div.advantages-block2-title,
+    div.advantages-block3-title {
+        font-size: 100px;
+        margin-top: 28px;
+    }
+    div.advantages-block1-subtitle, div.advantages-block2-subtitle, div.advantages-block3-subtitle {
+        font-size: 64px;
+        width: 1000px;
+        margin-top: 53px;
+    }
+    div.guarantee-label {
+        background: url(../img/Shape_1.jpg);
+        width: 1451px;
+        height: 456px;
+    }
+    div.guarantee-label-text {
+        text-align: center;
+        width: 1460px;
+        height: 1155px;
+        font-size: 98px;
+    }
+    div.popup-form {
+        position: relative;
+        background-size: cover;
+        padding: 35px 88px 50px 88px;
+        color: #000000;
+        left: 461px;
+        top: 153px;
+    }
+    div.popup-form img.img-popup {
+        width: 940px;
+    }
+    .main-img-adaptive {
+        display: block;
+        width: 1523px;
+    }
+    section.section {
+        width: 768px;
+    }
+    section.guarantee {
+        padding-left: 34px;
+    }
+    div.advantages-blocks {
+        margin-left: -176px;
+    }
+    div.popup-title {
+        margin-top: -596px;
+        text-align: center;
+        width: 803px;
+        height: 212px;
+        color: #000000;
+        font-family: "Exo 2";
+        font-size: 82px;
+        font-weight: 700;
+        text-transform: uppercase;
+        overflow: hidden;
+        position: relative;
+        left: 44px;
+    }
+    div.form-subtitle {
+        width: 833px;
+        height: 273px;
+        font-size: 70px;
+        font-weight: 400;
+        line-height: 64px;
+    }
+    div.form-mail input {
+        font-size: 88px;
+        width: 839px;
+        right: 50px;
+        height: 121px;
+    }
+    div.form-tel input {
+        font-size: 88px;
+        width: 839px;
+        right: 50px;
+        height: 121px;
+    }
+    div.form-mail {
+        width: 869px;
+        height: 135px;
+    }
+    div.form-tel {
+        width: 869px;
+        height: 135px;
+    }
+    div.privacy-text {
+        width: 890px;
+        height: 201px;
+        font-size: 34px;
+    }
+    span.checkmark {
+        top: 3px;
+        left: 31px;
+    }
+    div.popup-close {
+        position: absolute;
+        right: 177px;
+        top: 505px;
+        color: #000000;
+        font-size: 241px;
+        font-weight: 700;
+        cursor: pointer;
+        z-index: 9;
+    }
+    div.icon-head-overlay > img {
+        width: 100px;
+    }
+    div.icon-tel-overlay > img {
+        width: 100px;
+    }
+    div.icon-head-overlay {
+        position: absolute;
+        top: 50%;
+        margin-left: 763px;
+        margin-top: -35px;
+        z-index: 1;
+        color: #999999;
+    }
+    div.icon-tel-overlay {
+        position: absolute;
+        top: 50%;
+        margin-left: 763px;
+        margin-top: 119px;
+        z-index: 1;
+        color: #999999;
+    }
+    div.icon-line-up-overlay > img {
+        width: 3px;
+    }
+    div.icon-line-up-overlay {
+        position: absolute;
+        top: 50%;
+        margin-left: 748px;
+        margin-top: -50px;
+        z-index: 1;
+        color: #999999;
+    }
+    div.icon-line-down-overlay > img {
+        width: 3px;
+    }
+    div.icon-line-down-overlay {
+        position: absolute;
+        top: 50%;
+        margin-left: 748px;
+        margin-top: 101px;
+        z-index: 1;
+        color: #999999;
+    }
+}
+
+@media (max-width: 425px) {
+    .main-img-adaptive {
+        display: block;
+        width: 1523px;
+    }
+    section.section {
+        width: 768px;
+    }
+    section.guarantee {
+        padding-left: 34px;
+    }
+    div.advantages-blocks {
+        margin-left: -176px;
+    }
+    div.popup-title {
+        margin-top: -596px;
+        text-align: center;
+        width: 803px;
+        height: 212px;
+        color: #000000;
+        font-family: "Exo 2";
+        font-size: 82px;
+        font-weight: 700;
+        text-transform: uppercase;
+        overflow: hidden;
+        position: relative;
+        left: 44px;
+    }
+    div.form-subtitle {
+        width: 833px;
+        height: 273px;
+        font-size: 70px;
+        font-weight: 400;
+        line-height: 64px;
+    }
+    div.form-mail input {
+        font-size: 88px;
+        width: 839px;
+        right: 50px;
+        height: 121px;
+    }
+    div.form-tel input {
+        font-size: 88px;
+        width: 839px;
+        right: 50px;
+        height: 121px;
+    }
+    div.form-mail {
+        width: 869px;
+        height: 135px;
+    }
+    div.form-tel {
+        width: 869px;
+        height: 135px;
+    }
+    div.privacy-text {
+        width: 890px;
+        height: 201px;
+        font-size: 34px;
+    }
+    span.checkmark {
+        top: 3px;
+        left: 31px;
+    }
+    div.popup-close {
+        position: absolute;
+        right: 177px;
+        top: 505px;
+        color: #000000;
+        font-size: 241px;
+        font-weight: 700;
+        cursor: pointer;
+        z-index: 9;
+    }
+    div.icon-head-overlay > img {
+        width: 100px;
+    }
+    div.icon-tel-overlay > img {
+        width: 100px;
+    }
+    div.icon-head-overlay {
+        position: absolute;
+        top: 50%;
+        margin-left: 763px;
+        margin-top: -35px;
+        z-index: 1;
+        color: #999999;
+    }
+    div.icon-tel-overlay {
+        position: absolute;
+        top: 50%;
+        margin-left: 763px;
+        margin-top: 119px;
+        z-index: 1;
+        color: #999999;
+    }
+    div.icon-line-up-overlay > img {
+        width: 3px;
+    }
+    div.icon-line-up-overlay {
+        position: absolute;
+        top: 50%;
+        margin-left: 748px;
+        margin-top: -50px;
+        z-index: 1;
+        color: #999999;
+    }
+    div.icon-line-down-overlay > img {
+        width: 3px;
+    }
+    div.icon-line-down-overlay {
+        position: absolute;
+        top: 50%;
+        margin-left: 748px;
+        margin-top: 101px;
+        z-index: 1;
+        color: #999999;
+    }
 }
 
 @media (max-width: 350px) {
     ul li {
-        font-size: 24px;
-        padding: 41px;
+        font-size: 131px;
+        padding: 29px;
+    }
+    div.popup-title {
+        margin-top: -596px;
+        text-align: center;
+        width: 803px;
+        height: 212px;
+        color: #000000;
+        font-family: "Exo 2";
+        font-size: 82px;
+        font-weight: 700;
+        text-transform: uppercase;
+        overflow: hidden;
+        position: relative;
+        left: 44px;
+    }
+    div.form-subtitle {
+        width: 833px;
+        height: 273px;
+        font-size: 70px;
+        font-weight: 400;
+        line-height: 64px;
+    }
+    div.form-mail input {
+        font-size: 88px;
+        width: 839px;
+        right: 50px;
+        height: 121px;
+    }
+    div.form-tel input {
+        font-size: 88px;
+        width: 839px;
+        right: 50px;
+        height: 121px;
+    }
+    div.form-mail {
+        width: 869px;
+        height: 135px;
+    }
+    div.form-tel {
+        width: 869px;
+        height: 135px;
+    }
+    div.privacy-text {
+        width: 890px;
+        height: 201px;
+        font-size: 34px;
+    }
+    span.checkmark {
+        top: 3px;
+        left: 31px;
+    }
+    div.popup-close {
+        position: absolute;
+        right: 177px;
+        top: 505px;
+        color: #000000;
+        font-size: 241px;
+        font-weight: 700;
+        cursor: pointer;
+        z-index: 9;
+    }
+    div.icon-head-overlay > img {
+        width: 100px;
+    }
+    div.icon-tel-overlay > img {
+        width: 100px;
+    }
+    div.icon-head-overlay {
+        position: absolute;
+        top: 50%;
+        margin-left: 763px;
+        margin-top: -35px;
+        z-index: 1;
+        color: #999999;
+    }
+    div.icon-tel-overlay {
+        position: absolute;
+        top: 50%;
+        margin-left: 763px;
+        margin-top: 119px;
+        z-index: 1;
+        color: #999999;
+    }
+    div.icon-line-up-overlay > img {
+        width: 3px;
+    }
+    div.icon-line-up-overlay {
+        position: absolute;
+        top: 50%;
+        margin-left: 748px;
+        margin-top: -50px;
+        z-index: 1;
+        color: #999999;
+    }
+    div.icon-line-down-overlay > img {
+        width: 3px;
+    }
+    div.icon-line-down-overlay {
+        position: absolute;
+        top: 50%;
+        margin-left: 748px;
+        margin-top: 101px;
+        z-index: 1;
+        color: #999999;
+    }
+}
+
+@media (min-width: 338px) and (max-width: 650px) {
+    span.checkmark {
+        top: 3px;
+        left: 42px;
+        width: 30px;
+        height: 30px;
+    }
+    label.form-container span.checkmark:after {
+        width: 30px;
+        height: 30px;
+        border: solid #ffffff;
+    }
+    .checkmark:after {
+        width: 30px;
+        height: 30px;
+        border: solid #ffffff;
+    }
+    .checkmark {
+        position: absolute;
+        height: 30px;
+        width: 30px;
+        background-color: #c1b8b8;
+    }
+    .checkmark:after {
+        content: "";
+        position: absolute;
+        display: none;
+    }
+    .main-img-adaptive {
+        display: block;
+        width: 1347px;
+    }
+    div.section-logo-img img {
+        width: 227px;
+    }
+    div.section-logo-text {
+        font-size: 94px;
+        line-height: 119px;
+        width: 284px;
+        height: 298px;
+    }
+    section.section {
+        width: 500px;
+    }
+    section.guarantee {
+        padding-left: 0px;
+    }
+    div.guarantee-label {
+        width: 1346px;
+        height: 367px;
+    }
+    div.guarantee-label-text {
+        text-align: center;
+        width: 1348px;
+        height: 1155px;
+        font-size: 86px;
+    }
+    div.advantages-blocks {
+        margin-left: -250px;
+    }
+    div.advantages-block1, div.advantages-block2, div.advantages-block3 {
+        height: 184px;
+        width: 1044px;
+    }
+    button.adaptive {
+        position: relative;
+        bottom: 2268px;
+    }
+    ul.menu-adaptive {
+        background-color: rgba(0, 0, 0, 0.5);
+        position: relative;
+        bottom: 2236px;
+        height: 2416px;
+    }
+    ul li {
+        font-size: 190px;
+    }
+    div.popup-form {
+        position: relative;
+        background-size: cover;
+        padding: 35px 88px 50px 88px;
+        color: #000000;
+        left: 67px;
+        top: 558px;
+    }
+    div.popup-title {
+        margin-top: -596px;
+        text-align: center;
+        width: 803px;
+        height: 212px;
+        color: #000000;
+        font-family: "Exo 2";
+        font-size: 82px;
+        font-weight: 700;
+        text-transform: uppercase;
+        overflow: hidden;
+        position: relative;
+        left: 44px;
+    }
+    div.form-subtitle {
+        width: 833px;
+        height: 273px;
+        font-size: 70px;
+        font-weight: 400;
+        line-height: 64px;
+    }
+    div.form-mail input {
+        font-size: 88px;
+        width: 839px;
+        right: 50px;
+        height: 121px;
+    }
+    div.form-tel input {
+        font-size: 88px;
+        width: 839px;
+        right: 50px;
+        height: 121px;
+    }
+    div.form-mail {
+        width: 869px;
+        height: 135px;
+    }
+    div.form-tel {
+        width: 869px;
+        height: 135px;
+    }
+    div.privacy-text {
+        width: 890px;
+        height: 201px;
+        font-size: 34px;
+    }
+    span.checkmark {
+        top: 3px;
+        left: 31px;
+    }
+    div.popup-close {
+        position: absolute;
+        right: 244px;
+        top: 505px;
+        color: #000000;
+        font-size: 241px;
+        font-weight: 700;
+        cursor: pointer;
+        z-index: 9;
+    }
+    div.icon-head-overlay > img {
+        width: 100px;
+    }
+    div.icon-tel-overlay > img {
+        width: 100px;
+    }
+    div.icon-head-overlay {
+        position: absolute;
+        top: 50%;
+        margin-left: 763px;
+        margin-top: -35px;
+        z-index: 1;
+        color: #999999;
+    }
+    div.icon-tel-overlay {
+        position: absolute;
+        top: 50%;
+        margin-left: 763px;
+        margin-top: 119px;
+        z-index: 1;
+        color: #999999;
+    }
+    div.icon-line-up-overlay > img {
+        width: 3px;
+    }
+    div.icon-line-up-overlay {
+        position: absolute;
+        top: 50%;
+        margin-left: 748px;
+        margin-top: -50px;
+        z-index: 1;
+        color: #999999;
+    }
+    div.icon-line-down-overlay > img {
+        width: 3px;
+    }
+    div.icon-line-down-overlay {
+        position: absolute;
+        top: 50%;
+        margin-left: 748px;
+        margin-top: 101px;
+        z-index: 1;
+        color: #999999;
+    }
+}
+
+@media (max-width: 337px) {
+    .main-img-adaptive {
+        display: block;
+        width: 1347px;
+    }
+    div.section-logo-img img {
+        width: 227px;
+    }
+    div.section-logo-text {
+        font-size: 94px;
+        line-height: 119px;
+        width: 284px;
+        height: 298px;
+    }
+    section.section {
+        width: 500px;
+    }
+    section.guarantee {
+        padding-left: 0px;
+    }
+    div.guarantee-label {
+        width: 1346px;
+        height: 367px;
+    }
+    div.guarantee-label-text {
+        text-align: center;
+        width: 1348px;
+        height: 1155px;
+        font-size: 86px;
+    }
+    div.advantages-blocks {
+        margin-left: -250px;
+    }
+    div.advantages-block1, div.advantages-block2, div.advantages-block3 {
+        height: 184px;
+        width: 1044px;
+    }
+    button.adaptive {
+        position: relative;
+        bottom: 2268px;
+    }
+    ul.menu-adaptive {
+        background-color: rgba(0, 0, 0, 0.5);
+        position: relative;
+        bottom: 2236px;
+        height: 2416px;
+    }
+    ul li {
+        font-size: 190px;
+    }
+    div.popup-form {
+        position: relative;
+        background-size: cover;
+        padding: 35px 88px 50px 88px;
+        color: #000000;
+        left: 67px;
+        top: 558px;
+    }
+    div.popup-title {
+        margin-top: -596px;
+        text-align: center;
+        width: 803px;
+        height: 212px;
+        color: #000000;
+        font-family: "Exo 2";
+        font-size: 82px;
+        font-weight: 700;
+        text-transform: uppercase;
+        overflow: hidden;
+        position: relative;
+        left: 44px;
+    }
+    div.form-subtitle {
+        width: 833px;
+        height: 273px;
+        font-size: 70px;
+        font-weight: 400;
+        line-height: 64px;
+    }
+    div.form-mail input {
+        font-size: 88px;
+        width: 839px;
+        right: 50px;
+        height: 121px;
+    }
+    div.form-tel input {
+        font-size: 88px;
+        width: 839px;
+        right: 50px;
+        height: 121px;
+    }
+    div.form-mail {
+        width: 869px;
+        height: 135px;
+    }
+    div.form-tel {
+        width: 869px;
+        height: 135px;
+    }
+    div.privacy-text {
+        width: 890px;
+        height: 201px;
+        font-size: 34px;
+    }
+    span.checkmark {
+        top: 3px;
+        left: 31px;
+    }
+    div.popup-close {
+        position: absolute;
+        right: 244px;
+        top: 505px;
+        color: #000000;
+        font-size: 241px;
+        font-weight: 700;
+        cursor: pointer;
+        z-index: 9;
+    }
+    div.icon-head-overlay > img {
+        width: 100px;
+    }
+    div.icon-tel-overlay > img {
+        width: 100px;
+    }
+    div.icon-head-overlay {
+        position: absolute;
+        top: 50%;
+        margin-left: 763px;
+        margin-top: -35px;
+        z-index: 1;
+        color: #999999;
+    }
+    div.icon-tel-overlay {
+        position: absolute;
+        top: 50%;
+        margin-left: 763px;
+        margin-top: 119px;
+        z-index: 1;
+        color: #999999;
+    }
+    div.icon-line-up-overlay > img {
+        width: 3px;
+    }
+    div.icon-line-up-overlay {
+        position: absolute;
+        top: 50%;
+        margin-left: 748px;
+        margin-top: -50px;
+        z-index: 1;
+        color: #999999;
+    }
+    div.icon-line-down-overlay > img {
+        width: 3px;
+    }
+    div.icon-line-down-overlay {
+        position: absolute;
+        top: 50%;
+        margin-left: 748px;
+        margin-top: 101px;
+        z-index: 1;
+        color: #999999;
+    }
+}
+
+@media (min-width: 321px) and (max-width: 1023px) {
+    label.form-container {
+        padding-left: 95px;
+    }
+    span.checkmark {
+        top: 3px;
+        left: 42px;
+        width: 30px;
+        height: 30px;
+    }
+    label.form-container span.checkmark:after {
+        width: 30px;
+        height: 30px;
+        border: solid #ffffff;
+    }
+    .checkmark:after {
+        width: 30px;
+        height: 30px;
+        border: solid #ffffff;
+    }
+    .checkmark {
+        position: absolute;
+        height: 30px;
+        width: 30px;
+        background-color: #c1b8b8;
+    }
+    .checkmark:after {
+        content: "";
+        position: absolute;
+        display: none;
+    }
+}
+
+@media (max-width: 320px) {
+    div.popup-title {
+        margin-top: -596px;
+        text-align: center;
+        width: 803px;
+        height: 212px;
+        color: #000000;
+        font-family: "Exo 2";
+        font-size: 82px;
+        font-weight: 700;
+        text-transform: uppercase;
+        overflow: hidden;
+        position: relative;
+        left: 44px;
+    }
+    div.form-subtitle {
+        width: 833px;
+        height: 273px;
+        font-size: 70px;
+        font-weight: 400;
+        line-height: 64px;
+    }
+    div.form-mail input {
+        font-size: 88px;
+        width: 839px;
+        right: 50px;
+        height: 121px;
+    }
+    div.form-tel input {
+        font-size: 88px;
+        width: 839px;
+        right: 50px;
+        height: 121px;
+    }
+    div.form-mail {
+        width: 869px;
+        height: 135px;
+    }
+    div.form-tel {
+        width: 869px;
+        height: 135px;
+    }
+    label.form-container {
+        padding-left: 86px;
+    }
+    div.form-privacy#privacy {
+        margin-left: 26px;
+    }
+    div.privacy-text {
+        width: 890px;
+        height: 201px;
+        font-size: 34px;
+    }
+    span.checkmark {
+        top: 3px;
+        left: 42px;
+        width: 30px;
+        height: 30px;
+    }
+    label.form-container span.checkmark:after {
+        width: 30px;
+        height: 30px;
+        border: solid #ffffff;
+    }
+    .checkmark:after {
+        width: 30px;
+        height: 30px;
+        border: solid #ffffff;
+    }
+    .checkmark {
+        position: absolute;
+        height: 30px;
+        width: 30px;
+        background-color: #c1b8b8;
+    }
+    .checkmark:after {
+        content: "";
+        position: absolute;
+        display: none;
+    }
+    div.popup-close {
+        position: absolute;
+        right: 177px;
+        top: 505px;
+        color: #000000;
+        font-size: 241px;
+        font-weight: 700;
+        cursor: pointer;
+        z-index: 9;
+    }
+    div.icon-head-overlay > img {
+        width: 100px;
+    }
+    div.icon-tel-overlay > img {
+        width: 100px;
+    }
+    div.icon-head-overlay {
+        position: absolute;
+        top: 50%;
+        margin-left: 763px;
+        margin-top: -35px;
+        z-index: 1;
+        color: #999999;
+    }
+    div.icon-tel-overlay {
+        position: absolute;
+        top: 50%;
+        margin-left: 763px;
+        margin-top: 119px;
+        z-index: 1;
+        color: #999999;
+    }
+    div.icon-line-up-overlay > img {
+        width: 3px;
+    }
+    div.icon-line-up-overlay {
+        position: absolute;
+        top: 50%;
+        margin-left: 748px;
+        margin-top: -50px;
+        z-index: 1;
+        color: #999999;
+    }
+    div.icon-line-down-overlay > img {
+        width: 3px;
+    }
+    div.icon-line-down-overlay {
+        position: absolute;
+        top: 50%;
+        margin-left: 748px;
+        margin-top: 101px;
+        z-index: 1;
+        color: #999999;
     }
 }
 
