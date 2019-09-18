@@ -1,0 +1,72 @@
+.popgoods
+    height: 520px
+    margin-top: 80px
+    &__title
+        font-size: 20px
+        line-height: 1.2
+        font-weight: 700
+        text-transform: uppercase
+        color: #292929
+        text-align: center
+        margin-bottom: 55px
+    &__cards
+        display: flex
+        justify-content: space-between
+        &_card
+            display: grid
+            grid-template-columns: 220px 
+            grid-template-rows: 155px 40px 40px 50px
+            grid-gap: 10px
+            height: 360px
+            border: 2.0px solid #f6f6f6 
+            justify-items: center
+            padding-top: 19px
+            transition: box-shadow .3s
+            &:hover
+                box-shadow: 1px 0px 18px 0px rgba(48, 50, 50, 1)
+            &-title
+                font-size: 13px
+                font-weight: 500
+                text-decoration: underline
+                color: #292929 
+                text-align: center
+            &-price
+                font-size: 16px
+                font-weight: 700
+                color: #000000 
+            &-button
+                width: 180px
+                height: 50px
+                background-color: #ffd200
+                font-size: 12px
+                line-height: 22px
+                font-weight: 700
+                color: #0d0d0d   
+                text-align: center
+                line-height: 50px
+                cursor: pointer 
+                transition: box-shadow 2s
+                transition: text-shadow .3s 
+                &:hover
+                    box-shadow: 1px 0px 25px 0px rgba(255, 210, 0, 1);
+                    text-shadow: 0 0 .65px #333, 0 0 .65px #333    
+
+
+
+
+
+
+
+
+
+.small-price
+    font-size: 10px
+    font-weight: 400
+    color: #979797
+    text-decoration: line-through
+
+.red-price
+    font-size: 16px
+    font-weight: 700
+    color: #ff0000 
+    margin-left: 15px                
