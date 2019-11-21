@@ -1,0 +1,47 @@
+.advantage-container
+    display: flex
+    justify-content: center
+    align-items: center
+    width: 100vw
+    position: relative
+    margin-left: -50vw
+    left: 49%
+    height: 490px
+    background-color: #f4f4f4
+.advantage
+    width: 940px
+    &__title
+        text-align: center
+        font-size: 20px;
+        line-height: 1.2
+        font-weight: 700
+        text-transform: uppercase
+        color: #292929
+    &__cards
+        display: flex
+        justify-content: space-between 
+        margin-top: 40px
+        &_card
+            width: 300px
+            height: 253px
+            display: grid
+            grid-template-columns: 257px 
+            grid-template-rows: 50px 20px 50px
+            grid-gap: 30px 
+            text-align: center
+            padding-top: 40px
+            border: 2.0px solid #ffffff
+            justify-content: center
+            transition: box-shadow .3s
+            &:hover
+                box-shadow: 1px 0px 18px 0px rgba(48, 50, 50, 1)
+            &_title
+                font-size: 15px
+                font-weight: 700
+                color: #292929
+            &_subtitle
+                font-size: 12px
+                line-height: 18px
+                font-weight: 300
+                color: #292929
+                margin-top: -15px    
