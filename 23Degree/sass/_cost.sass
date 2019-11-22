@@ -189,6 +189,217 @@ button
     left: -30%
     margin-left: -76px
     z-index: 999
+    
+@media (max-width: 320px)
+    .container-cost
+        width: 320px
+        display: flex
+        justify-content: center
+        background: url(../img/cost/bgd-320.png) no-repeat center
+        height: 1050px
+        margin-top: 10px
+        position: relative
+    .cost
+        display: flex
+        flex-direction: column
+        align-items: center
+        width: 302px
+        margin-top: -35px
+        position: relative
+        &-title
+            font-size: 36px
+            line-height: 38px
+            font-weight: 300
+            color: #ffffff
+            margin-top: 52px
+        &-line
+            background: url(../img/cost/line.jpg) no-repeat center    
+            width: 290px
+            height: 1px
+            margin-top: 20px
+        &-subtitle
+            font-size: 26px
+            line-height: 38px
+            font-weight: 300
+            color: #ffffff
+            margin-top: 14px
+        &-calc
+            width: 320px
+            display: flex
+            justify-content: space-between
+            margin-top: 39px
+            flex-direction: column
+            &-calc  
+                width: 300px
+                &-up-block
+                    width: 300px
+                    height: 129px
+                    border: 1.0px solid #ffffff
+                    &-title
+                        font-size: 20px
+                        line-height: 24px
+                        font-weight: 400
+                        color: #ffffff
+                        margin-top: 22px
+                        margin-left: 23px
+                    &-ruler
+                        width: 255px
+                        height: 9px
+                        opacity: 0.5
+                        background-color: #ffffff
+                        margin-top: 50px
+                        margin-left: 23px
+                &-down-block
+                    width: 300px
+                    height: 235px
+                    border: 1.0px solid #ffffff
+                    margin-top: 8px
+                    &-title
+                        font-size: 20px
+                        line-height: 24px
+                        font-weight: 400
+                        color: #ffffff
+                        margin-top: 22px
+                        margin-left: 23px
+                    &-buttons
+                        display: flex
+                        justify-content: space-between
+                        width: 300px
+                        margin-top: 19px
+                        margin-left: 21px
+                        flex-direction: column
+                        &-btn
+                            width: 193px
+                            height: 45px
+                            border: 1.0px solid #ffffff  
+                            font-size: 16px
+                            line-height: 24px
+                            font-weight: 400
+                            color: #ffffff
+                            background-color: #ffffff00 
+                            border-radius: 5px
+                            transition: 0.3s 
+            &-result
+                width: 309px
+                height: 350px
+                display: flex
+                flex-direction: column
+                align-items: center
+                margin-top: 5px
+                &-up
+                    &-title
+                        font-size: 16px
+                        line-height: 24px
+                        font-weight: 400
+                        color: #ffffff
+                    &-digits    
+                        font-size: 32px
+                        line-height: 32px
+                        font-weight: 400
+                        color: #ffffff
+                        text-align: center
+                &-middle
+                    &-title
+                        font-size: 16px
+                        line-height: 24px
+                        font-weight: 400
+                        color: #ffffff
+                        margin-top: 20px
+                    &-digits    
+                        font-size: 32px
+                        line-height: 32px
+                        font-weight: 400
+                        color: #ffffff
+                        text-align: center
+                &-down
+                    &-title
+                        font-size: 16px
+                        line-height: 24px
+                        font-weight: 400
+                        color: #ffffff
+                        margin-top: 20px
+                    &-digits    
+                        font-size: 32px
+                        line-height: 32px
+                        font-weight: 400
+                        color: #ffffff 
+                        text-align: center 
+                &-tel
+                    margin-top: 9px
+                    &-text
+                        font-size: 14px
+                        line-height: 24px
+                        font-weight: 300
+                        color: #ffffff  
+                    &-tel
+                        font-size: 18px
+                        line-height: 24px
+                        font-weight: 500
+                        color: #ffffff  
+                        text-align: center                      
+        &-button
+            width: 309px
+            height: 51px
+            background-color: #19b5fe
+            font-family: Roboto
+            font-size: 14px
+            line-height: 15px
+            font-weight: 400
+            color: #ffffff
+            border: none
+            border-radius: 50px
+            margin-top: 34px
+            transition: 0.3s
+
+        // tooltips
+
+    button
+    &.tooltips
+        position: relative
+        display: inline
+
+        span
+        position: absolute
+        width: 300px
+        color: #464646
+        background: #ffffff
+        height: 102px
+        line-height: 24px
+        text-align: center
+        visibility: hidden
+        border-radius: 6px
+        padding-top: 17px
+
+        &:after
+            content: ''
+            position: absolute
+            bottom: 100%
+            left: 47%
+            margin-left: -8px
+            width: 0
+            height: 0
+            border-bottom: 17px solid #ffffff
+            border-right: 17px solid transparent
+            border-left: 17px solid transparent
+
+    &:hover.tooltips span
+        visibility: visible
+        top: 53px
+        left: -30%
+        margin-left: -76px
+        z-index: 999
+    
+
+
+
+
+
+
+
+
+     
+
+
 
 
 

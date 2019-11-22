@@ -1,6 +1,7 @@
 .hover:hover
     background-color: #19b5fe00 
     border: 1px solid
+    transition: 0.3s
     
 .hover-up-side-down:hover
     background-color: #19b5fe00 
@@ -9,11 +10,16 @@
     width: 181px
     height: 50px
     
+
+//  cost
+
 .hover-cost:hover
     background-color: #19b5fe
     border: 1px solid #19b5fe
     color: #ffffff 
     
+// portfolio
+
 .hover-portfolio:hover
     background-color: #19b5fe
     color: #ffffff 
@@ -25,17 +31,13 @@
     background-color: #19b5fe
     color: #ffffff 
     font-weight: 400
-    border-radius: 10px
     cursor: pointer
     height: 49px
-    &:after
-        content: url(../img/portfolio/1.png)
-        position: absolute
-        left: 47%
-        margin-left: -355px
-        width: 50px
-        height: 47px
-        transform: rotate(360deg)    
+    border-top-left-radius: 21px
+    border-bottom-left-radius: 21px
+    border-top-right-radius: 10px
+    border-bottom-right-radius: 10px
+   
 .hover-portfolio-u4:hover
     background-color: #19b5fe
     color: #ffffff 
@@ -43,15 +45,147 @@
     border-radius: 10px
     cursor: pointer
     height: 49px
+    border-top-left-radius: 10px
+    border-bottom-left-radius: 10px
+    border-top-right-radius: 21px
+    border-bottom-right-radius: 21px
+
+
+// container-best
+
+.best-blocks-block:hover
+    cursor: pointer
+    -webkit-box-shadow: 1px 2px 30px 0px rgba(146, 240, 224, 0.75)
+    -moz-box-shadow:    1px 2px 30px 0px rgba(104, 211, 214, 0.75)
+    box-shadow:         1px 2px 30px 0px rgba(114, 216, 202, 0.75)
+    transition: 0.3s
+    border-radius: 5px
+    background-color: rgba(169, 241, 229, 0.75)
+
+    // container-footer
+
+.footer-block-up-left-item a 
+    position: relative
+.footer-block-up-left-item a:before
+    content: ''
+    bottom: 0
+    left: 0
+    position: absolute
+    width: 100%
+    height: 2px
+    background-color: #ffffff
+    transition: 0.2s
+    transform: scaleX(0)
+.footer-block-up-left-item a:hover:before
+    transform: scaleX(1)
+
+.footer-block-up-right-facebook:hover
+    background: url(../img/footer/facebook.png)   
+    width: 30px
+    height: 30px
+    background-color: #ffffff
+    border-radius: 5px
+    transition: 0.1s
+
+.footer-block-up-right-google:hover
+    background: url(../img/footer/google_plus.png)   
+    width: 30px
+    height: 30px
+    background-color: #ffffff
+    border-radius: 5px
+    transition: 0.1s
+
+.footer-block-up-right-insta:hover
+    background: url(../img/footer/instagram1.png)   
+    width: 30px
+    height: 30px
+    background-color: #ffffff
+    border-radius: 5px
+    transition: 0.1s
+
+
+    
+    //  blog
+
+.blog-block-img:hover
+    cursor: pointer
+    -webkit-box-shadow: 1px 2px 30px 0px rgba(146, 240, 224, 0.75)
+    -moz-box-shadow:    1px 2px 30px 0px rgba(104, 211, 214, 0.75)
+    box-shadow:         1px 2px 30px 0px rgba(114, 216, 202, 0.75)
+    transition: 0.3s
+    border-radius: 5px
+    background-color: rgba(169, 241, 229, 0.75)
+
+.blueShadow:hover
+    cursor: pointer
+    -webkit-box-shadow: 1px 2px 30px 0px rgba(146, 240, 224, 0.75)
+    -moz-box-shadow:    1px 2px 30px 0px rgba(104, 211, 214, 0.75)
+    box-shadow:         1px 2px 30px 0px rgba(114, 216, 202, 0.75)
+    transition: 0.3s
+    border-radius: 5px
+    background-color: rgba(169, 241, 229, 0.75)    
+  
+            
+    //  team
+
+    
+.block-team-img1-img1,
+.block-team-img2-img2,
+.block-team-img3-img3,
+.block-team-img4-img4,
+.block-team-img5-img5,
+.block-team-img6-img6
+    border-radius: 70px
+    width: 225px
+    height: 225px
+    position: relative
+    overflow: hidden
+    display: inline-block
+    cursor: pointer
+    top: -120%
+    transition: top 0.25s cubic-bezier(0, 0.3, 1, 0.7)
+    background-size: cover
+    &::before
+        width: 140%
+        top: inherit
+        left: -20%
+        opacity: 0.6
+        background-image: linear-gradient(180deg, rgba(255, 255, 255, 0), #ffffff 40%, rgba(255, 255, 255, 0.6) 60%, rgba(255, 255, 255, 0))
+        transform: rotate(-20deg)
     &:after
-        content: url(../img/portfolio/1.png)
+        width: 100%
+        top: 0
+        background-image: radial-gradient(35% 25%, closest-corner, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0))
+    &:after
+        width: 100%
+        top: 0
+        background-image: radial-gradient(35% 25%, closest-corner, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0))
+    &:before, &:after
+        content: ""
+        display: block
         position: absolute
-        left: 47%
-        margin-left: 422px
-        width: 50px
-        height: 47px
-        transform: rotate(180deg)    
-        
+        height: 100%
+    &:hover
+        top: 120%
+
+        // interactions
+
+.interactions-blocks-images1,
+.interactions-blocks-images2,
+.interactions-blocks-images3,
+.interactions-blocks-images4
+    cursor: pointer
+    opacity: 0.7
+    &:hover
+        opacity: 1  
+        transition: 0.3s
+
+
+
+
+
+
+
     
     
 

@@ -75,10 +75,11 @@
     height: 78px
     opacity: 0.3
     position: absolute
-    right: 483px
+    // right: 475px
     top: 375px
+    margin-left: -32px
+   
     
-
 .header-content-button
     display: flex
     justify-content: center
@@ -98,7 +99,119 @@
     line-height: 19.48px 
     padding: 2px 20px
     transition: 0.3s 
+
+@media (max-width: 320px)   
+    .header-content
+        display: flex
+        flex-direction: column
+        align-items: center
+        width: 320px
+        height: 500px
+        margin-top: 67px
+        &-title
+            width: 300px
+            height: 85px
+            color: #ffffff
+            font-size: 48px
+            font-weight: 700
+            line-height: 44px
+            font-size: 36px
+            text-align: center
+        &-subtitle
+            width: 300px
+            height: 22px
+            color: #ffffff
+            font-size: 22px
+            font-weight: 300
+            line-height: 28px
+            text-align: center
+            margin-top: 100px
+        &-text
+            width: 300px
+            height: 14px
+            color: #ffffff
+            font-size: 14px
+            font-weight: 300
+            line-height: 28px
+            margin-top: 22px
+            text-align: center
+        &-mouse-down
+            width: 17px
+            height: 49px
+            background: url(../img/header/mouse.png)
+            margin-top: 76px 
+            
+
+    .header-content-inputs-button-layer
+        display: flex        
+
+    .header-content-inputs
+        display: flex
+        justify-content: space-between
+        width: 300px
+        height: 51px
+        margin-top: 70px
+        flex-direction: column
+
+    .header-content-input
+        display: flex
+        align-items: center
+        width: 290px
+        height: 51px
+        background-color: #ffffff
+        border-radius: 50px
+        margin-bottom: 10px
+        
+    .header-input
+        width: 260px
+        height: 25px
+        font-size: 13px
+        padding: 7px
+        margin-left: 20px
+        border: none
+        border-radius: 8px
+        color: #606060
+        font-weight: 300
+        line-height: 24px
+
+    .layer-line
+        background: url(../img/header/Rectangle_2.png)
+        width: 300px
+        height: 78px
+        opacity: 0.3
+        position: absolute
+        // right: 475px
+        top: 375px
+        margin-left: -32px
+    
+        
+    .header-content-button
+        display: flex
+        justify-content: center
+        width: 300px
+        height: 61px
+        margin-top: 55px
+        
+    .header-button
+        background-color: #19b5fe
+        border: none       
+        width: 232px
+        height: 61px
+        border-radius: 50px
+        color: #ffffff
+        font-size: 16px
+        font-weight: 500
+        line-height: 19.48px 
+        padding: 2px 20px
+        transition: 0.3s 
+
    
+    
+    
+
+
+
+    
     
     
 
