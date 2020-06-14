@@ -1,0 +1,247 @@
+.sh-menu {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0;
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+  right: 2px;
+  top: 47px;
+}
+
+@media (min-width: 100px) and (max-width: 1190px) {
+  .sh-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media (min-width: 1191px) and (max-width: 10000px) {
+  .sh-menu {
+    display: none;
+  }
+}
+
+.sh-menu-blocks {
+  top: 150px;
+  position: absolute;
+  left: 506px;
+}
+
+@media (min-width: 100px) and (max-width: 1190px) {
+  .sh-menu-blocks {
+    display: none;
+  }
+}
+
+@media (min-width: 1191px) and (max-width: 10000px) {
+  .sh-menu-blocks {
+    display: none;
+  }
+}
+
+@media (max-width: 1140px) {
+  .sh-menu-blocks {
+    left: 480px;
+  }
+}
+
+@media (min-width: 1040px) and (max-width: 1091px) {
+  .sh-menu-blocks {
+    left: 446px;
+  }
+}
+
+@media (min-width: 1040px) and (max-width: 1084px) {
+  .sh-menu-blocks {
+    left: 446px;
+  }
+}
+
+@media (max-width: 1039px) {
+  .sh-menu-blocks {
+    left: 423px;
+  }
+}
+
+@media (min-width: 962px) and (max-width: 1000px) {
+  .sh-menu-blocks {
+    left: 402px;
+  }
+}
+
+@media (min-width: 912px) and (max-width: 961px) {
+  .sh-menu-blocks {
+    left: 350px;
+  }
+}
+
+@media (min-width: 850px) and (max-width: 911px) {
+  .sh-menu-blocks {
+    left: 350px;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 849px) {
+  .sh-menu-blocks {
+    left: 340px;
+  }
+}
+
+@media (min-width: 693px) and (max-width: 815px) {
+  .sh-menu-blocks {
+    left: 319px;
+  }
+}
+
+@media (max-width: 692px) {
+  .sh-menu-blocks {
+    left: 245px;
+  }
+}
+
+@media (max-width: 425px) {
+  .sh-menu-blocks {
+    left: 115px;
+  }
+}
+
+@media (max-width: 370px) {
+  .sh-menu-blocks {
+    left: 90px;
+  }
+}
+
+@media (max-width: 369px) {
+  .sh-menu-blocks {
+    left: 65px;
+  }
+}
+
+.sh-menu-blocks .item {
+  font-size: 35px;
+  font-family: Roboto;
+  cursor: pointer;
+  color: #ffffff;
+}
+
+.sh-menu-blocks .i-1,
+.sh-menu-blocks .i-2,
+.sh-menu-blocks .i-3,
+.sh-menu-blocks .i-4,
+.sh-menu-blocks .i-5,
+.sh-menu-blocks .i-6,
+.sh-menu-blocks .i-7,
+.sh-menu-blocks .i-8 {
+  -webkit-animation-name: slideInLeft;
+  animation-name: slideInLeft;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@-webkit-keyframes slideInLeft {
+  0% {
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+    visibility: visible;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInLeft {
+  0% {
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+    visibility: visible;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+.layer {
+  display: none;
+  background: rgba(102, 102, 102, 0.5);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.ham {
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-transition: -webkit-transform 400ms;
+  transition: -webkit-transform 400ms;
+  transition: transform 400ms;
+  transition: transform 400ms, -webkit-transform 400ms;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  position: relative;
+  z-index: 1;
+}
+
+.hamRotate.active {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.hamRotate180.active {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.line {
+  fill: none;
+  -webkit-transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+  transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+  stroke: #ffffff;
+  stroke-width: 5.5;
+  stroke-linecap: round;
+}
+
+.ham3 .top {
+  stroke-dasharray: 40 130;
+}
+
+.ham3 .middle {
+  stroke-dasharray: 40 140;
+}
+
+.ham3 .bottom {
+  stroke-dasharray: 40 205;
+}
+
+.ham3.active .top {
+  stroke-dasharray: 75 130;
+  stroke-dashoffset: -63px;
+}
+
+.ham3.active .middle {
+  stroke-dashoffset: -102px;
+}
+
+.ham3.active .bottom {
+  stroke-dasharray: 110 205;
+  stroke-dashoffset: -86px;
+}
+/*# sourceMappingURL=nav-resp.css.map */
