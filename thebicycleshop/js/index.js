@@ -135,18 +135,18 @@ var CitiesSlider = function(_React$Component) {
 var slides = [{
     city: 'HANDMADE BICYCLE',
     country: 'You create the journey, we supply the parts.',
-    img: '../img/slider.jpg'
+    img: './img/slider.jpg'
 }, {
     city: 'Example',
-    img: '../img/slider1.jpg'
+    img: './img/slider1.jpg'
 }, {
     city: 'Examplee',
     country: 'Examplee',
-    img: '../img/slider2.jpg'
+    img: './img/slider2.jpg'
 }, {
     city: 'Exampleeee',
     country: 'Exampleeee',
-    img: '../img/slider3.jpg'
+    img: './img/slider3.jpg'
 }];
 
 ReactDOM.render(React.createElement(CitiesSlider, { slides: slides }), document.querySelector('#app'));
