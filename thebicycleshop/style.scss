@@ -1,0 +1,1361 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+a:active,
+a:focus,
+a:hover {
+    outline: none;
+}
+
+input,
+textarea {
+    outline: none;
+}
+
+input:active,
+textarea:active {
+    outline: none;
+}
+
+button:hover,
+button:focus,
+button:active {
+    outline: none;
+}
+
+button {
+    outline: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    position: relative;
+    z-index: 7;
+    top: 23px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .logo {
+        cursor: pointer;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .wheel {
+            margin-bottom: -10px;
+        }
+    }
+
+    .wrap-nav {
+        width: 50%;
+        display: flex;
+        justify-content: flex-start;
+
+        @media (max-width: 800px) {
+            display: none;
+        }
+
+        .container-ul {
+            list-style-type: none;
+            display: flex;
+            justify-content: space-evenly;
+            width: 54%;
+            margin-left: 66px;
+            cursor: pointer;
+            transition: .3s;
+
+            .container-li {
+                cursor: pointer;
+                font-size: 15px;
+                line-height: 32px;
+                font-weight: 700;
+                letter-spacing: 0.005em;
+                color: #ffffff;
+                text-transform: uppercase;
+                position: relative;
+                transition: .3s;
+                height: 100%;
+                padding-left: 15px;
+                padding-right: 15px;
+                background-repeat: 15px;
+
+                &:hover {
+                    background: yellow;
+                    border-radius: 15px;
+                    color: #000000;
+                }
+
+                &:hover .into-li {
+                    visibility: visible;
+                    background: yellow;
+                    width: 13%;
+                    margin-left: 32px;
+                    padding-left: 17px;
+                    border-radius: 15px;
+                    width: 200px;
+                }
+
+
+                &:hover .into-ul {
+                    color: #000000 !important;
+                }
+
+
+                .into-li {
+                    visibility: hidden;
+                    list-style-type: none;
+                    text-transform: uppercase;
+                    width: 5%;
+                    justify-content: space-between;
+                    cursor: pointer;
+                    transition: .3s;
+                    position: absolute;
+                    top: 25px;
+                    width: 200px;
+
+                    .into-ul {
+                        color: #5d5d5d00;
+                        font-weight: 700;
+                        transition: .3s;
+                        padding: 3px 3px;
+                        border-radius: 5px;
+
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+// submenu
+
+
+.nav-subitems-wrap {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 7;
+
+    .nav-subitem {
+        cursor: pointer;
+        font-size: 15px;
+        line-height: 32px;
+        font-weight: 700;
+        letter-spacing: 0.005em;
+        color: #ffffff;
+        text-transform: uppercase;
+    }
+}
+
+
+// app
+
+#app {
+    position: relative;
+    bottom: 54px;
+}
+
+
+// header-bottom
+
+.header-bottom {
+    display: flex;
+    justify-content: center;
+
+    .down-button {
+        cursor: pointer;
+        background-image: url(img/scroll_icon_link.png);
+        width: 66px;
+        height: 77px;
+        position: relative;
+        z-index: 6;
+        top: -165px;
+        transition: 0.3s;
+
+        &:hover {
+            background-image: url(img/scroll_icon_link1.png);
+            width: 66px;
+            height: 77px;
+            position: relative;
+            z-index: 9;
+            top: -165px;
+            transition: 0.3s;
+        }
+    }
+}
+
+//categories
+
+
+.categories {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 947px;
+
+    @media (max-width: 1900px) {
+        top: 860px;
+    }
+
+    .bg {
+        background-image: url(img/categories_bg_image.png);
+        background-size: cover;
+        width: 100%;
+        height: 628px;
+
+        @media (max-width: 537px) {
+            height: 868px;
+        }
+
+        .title {
+            margin-top: 75px;
+            font-size: 28px;
+            line-height: 32px;
+            font-weight: 700;
+            letter-spacing: 0.005em;
+            color: #000000;
+            text-transform: uppercase;
+            text-align: center;
+            margin-bottom: 75px;
+
+            @media (max-width: 800px) {
+                margin-top: 37px;
+                margin-bottom: 21px;
+            }
+
+            &::after {
+                content: 'categories';
+            }
+        }
+
+        .cards-wrap {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+
+            .cards {
+                width: 100%;
+                max-width: 1130px;
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                padding: 15px;
+
+                @media (max-width: 1080px) {
+                    width: 1050px;
+                    justify-content: space-evenly;
+                }
+
+                @media (max-width: 800px) {
+                    width: 770px;
+                    height: 561px;
+                    justify-content: space-evenly;
+                }
+
+                @media (max-width: 537px) {
+                    width: 520px;
+                    height: 750px;
+                    justify-content: space-evenly;
+                }
+
+                .card {
+                    display: flex;
+
+                    .card-img {
+                        background-image: url(img/categories_photo.png);
+                        width: 346px;
+                        height: 288px;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+
+                        @media (min-width: 1081px) and (max-width: 5000px) {
+
+
+                            &:hover {
+                                .card-img-cover {
+                                    position: absolute;
+                                    z-index: 7;
+                                    content: url(img/hover_filter.png);
+                                    opacity: 0.16;
+                                    transition: 0.3s;
+
+                                }
+
+                                .button::after {
+                                    cursor: pointer;
+                                    z-index: 7;
+                                    content: 'go to store';
+                                    font-size: 12px;
+                                    line-height: 32px;
+                                    font-weight: 700;
+                                    letter-spacing: 0.005em;
+                                    color: #ffffff;
+                                    text-transform: uppercase;
+                                    border: 3px solid #ffffff;
+                                    border-radius: 10px;
+                                    padding: 10px 15px;
+                                    position: relative;
+                                    top: 30px;
+                                }
+
+                                .card-title {
+                                    position: relative;
+                                    top: 16px;
+                                }
+
+                                .card-text {
+                                    position: relative;
+                                    top: 16px;
+                                }
+                            }
+                        }
+
+                        @media (max-width: 1080px) {
+                            width: 285px;
+                            height: 237px;
+                            background-size: contain;
+
+                            .button::after {
+                                cursor: pointer;
+                                z-index: 7;
+                                content: 'go to store';
+                                font-size: 12px;
+                                line-height: 32px;
+                                font-weight: 700;
+                                letter-spacing: 0.005em;
+                                color: #ffffff;
+                                text-transform: uppercase;
+                                border: 3px solid #ffffff;
+                                border-radius: 10px;
+                                padding: 10px 15px;
+                                position: relative;
+                                top: 30px;
+                            }
+                        }
+
+                        @media (max-width: 860px) {
+                            width: 250px;
+                            height: 208px;
+                            background-size: contain;
+                        }
+
+
+                        .card-title {
+                            font-size: 15px;
+                            line-height: 32px;
+                            font-weight: 700;
+                            letter-spacing: 0.005em;
+                            color: #fcff19;
+
+
+                            &::after {
+                                content: 'FIXED / SINGLE SPEED';
+                            }
+                        }
+
+                        .card-text {
+                            font-size: 16px;
+                            line-height: 32px;
+                            font-weight: 300;
+                            letter-spacing: 0.005em;
+                            color: #ffffff;
+
+                            @media (max-width: 860px) {
+                                font-size: 14px;
+                            }
+
+                            &::before {
+                                content: 'Are You ready for the 27.5 Revolution?';
+                            }
+                        }
+                    }
+                }
+
+                .card-2 {
+                    display: flex;
+
+                    .card-2-img {
+                        background-image: url(img/categories_photo_02.png);
+                        width: 346px;
+                        height: 288px;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+
+                        @media (min-width: 1081px) and (max-width: 5000px) {
+
+
+                            &:hover {
+                                .card-img-cover {
+                                    position: absolute;
+                                    z-index: 7;
+                                    content: url(img/hover_filter.png);
+                                    opacity: 0.16;
+                                    transition: 0.3s;
+
+                                }
+
+                                .button::after {
+                                    cursor: pointer;
+                                    z-index: 7;
+                                    content: 'go to store';
+                                    font-size: 12px;
+                                    line-height: 32px;
+                                    font-weight: 700;
+                                    letter-spacing: 0.005em;
+                                    color: #ffffff;
+                                    text-transform: uppercase;
+                                    border: 3px solid #ffffff;
+                                    border-radius: 10px;
+                                    padding: 10px 15px;
+                                    position: relative;
+                                    top: 30px;
+                                }
+
+                                .card-2-title {
+                                    position: relative;
+                                    top: 16px;
+                                }
+
+                                .card-2-text {
+                                    position: relative;
+                                    top: 16px;
+                                }
+                            }
+                        }
+
+                        @media (max-width: 1080px) {
+                            width: 285px;
+                            height: 237px;
+                            background-size: contain;
+
+                            .button::after {
+                                cursor: pointer;
+                                z-index: 7;
+                                content: 'go to store';
+                                font-size: 12px;
+                                line-height: 32px;
+                                font-weight: 700;
+                                letter-spacing: 0.005em;
+                                color: #ffffff;
+                                text-transform: uppercase;
+                                border: 3px solid #ffffff;
+                                border-radius: 10px;
+                                padding: 10px 15px;
+                                position: relative;
+                                top: 30px;
+                            }
+                        }
+
+                        @media (max-width: 860px) {
+                            width: 250px;
+                            height: 208px;
+                            background-size: contain;
+                        }
+
+                        
+
+                        .card-2-title {
+                            font-size: 15px;
+                            line-height: 32px;
+                            font-weight: 700;
+                            letter-spacing: 0.005em;
+                            color: #fcff19;
+
+                            &::after {
+                                content: 'PREMIUM SERIES';
+                            }
+                        }
+
+                        .card-2-text {
+                            font-size: 16px;
+                            line-height: 32px;
+                            font-weight: 300;
+                            letter-spacing: 0.005em;
+                            color: #ffffff;
+
+                            @media (max-width: 860px) {
+                                font-size: 14px;
+                            }
+
+                            &::before {
+                                content: 'Exclusive Bike Components';
+                            }
+                        }
+                    }
+                }
+
+                .card-3 {
+                    display: flex;
+
+                    .card-3-img {
+                        background-image: url(img/categories_photo_1.png);
+                        width: 346px;
+                        height: 288px;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+
+                        @media (min-width: 1081px) and (max-width: 5000px) {
+
+
+                            &:hover {
+                                .card-img-cover {
+                                    position: absolute;
+                                    z-index: 7;
+                                    content: url(img/hover_filter.png);
+                                    opacity: 0.16;
+                                    transition: 0.3s;
+
+                                }
+
+                                .button::after {
+                                    cursor: pointer;
+                                    z-index: 7;
+                                    content: 'go to store';
+                                    font-size: 12px;
+                                    line-height: 32px;
+                                    font-weight: 700;
+                                    letter-spacing: 0.005em;
+                                    color: #ffffff;
+                                    text-transform: uppercase;
+                                    border: 3px solid #ffffff;
+                                    border-radius: 10px;
+                                    padding: 10px 15px;
+                                    position: relative;
+                                    top: 30px;
+                                }
+
+                                .card-3-title {
+                                    position: relative;
+                                    top: 16px;
+                                }
+
+                                .card-3-text {
+                                    position: relative;
+                                    top: 16px;
+                                }
+                            }
+                        }
+
+                        @media (max-width: 1080px) {
+                            width: 285px;
+                            height: 237px;
+                            background-size: contain;
+
+                            .button::after {
+                                cursor: pointer;
+                                z-index: 7;
+                                content: 'go to store';
+                                font-size: 12px;
+                                line-height: 32px;
+                                font-weight: 700;
+                                letter-spacing: 0.005em;
+                                color: #ffffff;
+                                text-transform: uppercase;
+                                border: 3px solid #ffffff;
+                                border-radius: 10px;
+                                padding: 10px 15px;
+                                position: relative;
+                                top: 30px;
+                            }
+                        }
+
+                        @media (max-width: 860px) {
+                            width: 250px;
+                            height: 208px;
+                            background-size: contain;
+                        }
+
+                        
+
+                        .card-3-title {
+                            font-size: 15px;
+                            line-height: 32px;
+                            font-weight: 700;
+                            letter-spacing: 0.005em;
+                            color: #fcff19;
+
+                            &::after {
+                                content: 'CITY BIKES';
+                            }
+                        }
+
+                        .card-3-text {
+                            font-size: 16px;
+                            line-height: 32px;
+                            font-weight: 300;
+                            letter-spacing: 0.005em;
+                            color: #ffffff;
+
+                            @media (max-width: 860px) {
+                                font-size: 14px;
+                            }
+
+                            &::before {
+                                content: 'Street Playground';
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// popular
+
+
+.pop-wrap {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 628px;
+    background: #ffffff;
+    position: relative;
+    top: 497px;
+    padding: 15px;
+
+    @media (max-width: 1080px) {
+        height: 668px;
+    }
+
+    @media (max-width: 750px) {
+        height: 995px;
+    }
+
+    @media (max-width: 750px) {
+        top: 737px;
+    }
+
+    .pop {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        .pop-title::after {
+            content: 'POPULAR BIKES';
+            font-size: 28px;
+            line-height: 32px;
+            font-weight: 700;
+            letter-spacing: 0.005em;
+            color: #000000;
+        }
+
+        .cards-wrap {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .cards {
+                width: 100%;
+                max-width: 1850px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                @media (max-width: 1080px) {
+                    flex-wrap: wrap;
+                    justify-content: space-evenly;
+                }
+
+
+                .card-1 {
+                    width: 100%;
+                    max-width: 493px;
+                    height: 450px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    margin: 5px 5px;
+
+                    @media (max-width: 1080px) {
+                        width: 100%;
+                        max-width: 350px;
+                        height: 280px;
+                    }
+
+                    .title-img {
+                        background: url(img/item_photo.png);
+                        width: 490px;
+                        height: 391px;
+
+                        @media (max-width: 1538px) {
+                            width: 323px;
+                            height: 261px;
+                            background-size: cover;
+                        }
+                        
+                    }
+
+                    .card-wrap {
+                        display: flex;
+                        width: 100%;
+                        height: 43px;
+
+                        @media (max-width: 1538px) {
+                            width: 70%;
+                            min-width: 342px;
+                            justify-content: space-between;
+                        }
+
+                        @media (max-width: 320px) {
+                            width: 70%;
+                            min-width: 275px;
+                            justify-content: space-between;
+                        }
+
+                        .card-left-bottom {
+                            width: 49%;
+                            height: 43px;
+
+                            @media (max-width: 1538px) {
+                                width: 36%;
+                            }
+
+                            @media (max-width: 320px) {
+                                width: 45%;
+                            }
+
+                            .card-title {
+                                font-size: 15px;
+                                // line-height: 32px;
+                                font-weight: 700;
+                                letter-spacing: 0.005em;
+                                color: #000000;
+                            }
+
+                            .card-price {
+                                font-size: 15px;
+                                line-height: 32px;
+                                font-weight: 300;
+                                letter-spacing: 0.005em;
+                                color: #000000;
+                            }
+                        }
+
+                        .card-right-bottom {
+                            width: 51%;
+                            height: 43px;
+                            display: flex;
+                            justify-content: space-between;
+
+                            @media (max-width: 1538px) {
+                                width: 63%;
+                                justify-content: space-between;
+                            }
+
+                            .button-option {
+                                width: 144px;
+                                height: 43px;
+                                border: 1.0px solid #8f8f8f;
+                                border-radius: 10.0px;
+                                cursor: pointer;
+                                text-transform: uppercase;
+                                font-size: 12px;
+                                line-height: 32px;
+                                font-weight: 700;
+                                letter-spacing: 0.005em;
+                                color: #000000;
+                                display: flex;
+                                justify-content: space-around;
+                                align-items: center;
+
+                                @media (max-width: 1538px) {
+                                    width: 114px;
+                                }
+
+                                @media (max-width: 320px) {
+                                    width: 92px;
+                                }
+
+                                .img-card-button {
+                                    width: 20px;
+                                    height: 20px;
+                                    display: flex;
+                                }
+                            }
+
+                            .button-buy {
+                                width: 94px;
+                                height: 43px;
+                                background-color: #b7b7b7;
+                                border-radius: 10.0px;
+                                border: none;
+                                cursor: pointer;
+                                text-transform: uppercase;
+                                font-size: 12px;
+                                line-height: 32px;
+                                font-weight: 700;
+                                letter-spacing: 0.005em;
+                                color: #ffffff;
+                                transition: .3s;
+
+                                @media (max-width: 320px) {
+                                    width: 65px;
+                                }
+
+                                &:hover {
+                                    background-color: #000000;
+                                    color: #fcff19;
+                                    transition: .3s;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                // ------------------------------------------------
+                .card-2 {
+                    width: 100%;
+                    max-width: 493px;
+                    height: 450px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    margin: 5px 5px;
+
+                    @media (max-width: 1080px) {
+                        width: 100%;
+                        max-width: 350px;
+                        height: 280px;
+                    }
+
+                    .title-img {
+                        background: url(img/item_photo_2.png);
+                        width: 490px;
+                        height: 391px;
+
+                        @media (max-width: 1538px) {
+                            width: 323px;
+                            height: 261px;
+                            background-size: cover;
+                        }
+                    }
+
+                    .card-wrap {
+                        display: flex;
+                        width: 100%;
+                        height: 43px;
+
+                        @media (max-width: 1538px) {
+                            width: 70%;
+                            min-width: 342px;
+                            justify-content: space-between;
+                        }
+
+                        @media (max-width: 320px) {
+                            width: 70%;
+                            min-width: 275px;
+                            justify-content: space-between;
+                        }
+
+                        .card-left-bottom {
+                            width: 49%;
+                            height: 43px;
+
+                            @media (max-width: 1538px) {
+                                width: 36%;
+                            }
+
+                            @media (max-width: 320px) {
+                                width: 45%;
+                            }
+
+                            .card-title {
+                                font-size: 15px;
+                                // line-height: 32px;
+                                font-weight: 700;
+                                letter-spacing: 0.005em;
+                                color: #000000;
+                            }
+
+                            .card-price {
+                                font-size: 15px;
+                                line-height: 32px;
+                                font-weight: 300;
+                                letter-spacing: 0.005em;
+                                color: #000000;
+                            }
+                        }
+
+                        .card-right-bottom {
+                            width: 51%;
+                            height: 43px;
+                            display: flex;
+                            justify-content: space-between;
+
+                            @media (max-width: 1538px) {
+                                width: 63%;
+                                justify-content: space-between;
+                            }
+
+                            .button-option {
+                                width: 144px;
+                                height: 43px;
+                                border: 1.0px solid #8f8f8f;
+                                border-radius: 10.0px;
+                                cursor: pointer;
+                                text-transform: uppercase;
+                                font-size: 12px;
+                                line-height: 32px;
+                                font-weight: 700;
+                                letter-spacing: 0.005em;
+                                color: #000000;
+                                display: flex;
+                                justify-content: space-around;
+                                align-items: center;
+
+                                @media (max-width: 1538px) {
+                                    width: 114px;
+                                }
+
+                                @media (max-width: 320px) {
+                                    width: 92px;
+                                }
+
+                                .img-card-button {
+                                    width: 20px;
+                                    height: 20px;
+                                    display: flex;
+                                }
+                            }
+
+                            .button-buy {
+                                width: 94px;
+                                height: 43px;
+                                background-color: #b7b7b7;
+                                border-radius: 10.0px;
+                                border: none;
+                                cursor: pointer;
+                                text-transform: uppercase;
+                                font-size: 12px;
+                                line-height: 32px;
+                                font-weight: 700;
+                                letter-spacing: 0.005em;
+                                color: #ffffff;
+                                transition: .3s;
+
+                                @media (max-width: 320px) {
+                                    width: 65px;
+                                }
+
+                                &:hover {
+                                    background-color: #000000;
+                                    color: #fcff19;
+                                    transition: .3s;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                // -----------------------------------------
+                .card-3 {
+                    width: 100%;
+                    max-width: 493px;
+                    height: 450px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    margin: 5px 5px;
+
+                    @media (max-width: 1080px) {
+                        width: 100%;
+                        max-width: 350px;
+                        height: 280px;
+                    }
+
+                    .title-img {
+                        background: url(img/item_photo_3.png);
+                        width: 490px;
+                        height: 391px;
+
+                        @media (max-width: 1538px) {
+                            width: 323px;
+                            height: 261px;
+                            background-size: cover;
+                        }
+                    }
+
+                    .card-wrap {
+                        display: flex;
+                        width: 100%;
+                        height: 43px;
+
+                        @media (max-width: 1538px) {
+                            width: 70%;
+                            min-width: 342px;
+                            justify-content: space-between;
+                        }
+
+                        @media (max-width: 320px) {
+                            width: 70%;
+                            min-width: 275px;
+                            justify-content: space-between;
+                        }
+
+                        .card-left-bottom {
+                            width: 49%;
+                            height: 43px;
+
+                            @media (max-width: 1538px) {
+                                width: 36%;
+                            }
+
+                            @media (max-width: 320px) {
+                                width: 45%;
+                            }
+
+                            .card-title {
+                                font-size: 15px;
+                                // line-height: 32px;
+                                font-weight: 700;
+                                letter-spacing: 0.005em;
+                                color: #000000;
+                            }
+
+                            .card-price {
+                                font-size: 15px;
+                                line-height: 32px;
+                                font-weight: 300;
+                                letter-spacing: 0.005em;
+                                color: #000000;
+                            }
+                        }
+
+                        .card-right-bottom {
+                            width: 51%;
+                            height: 43px;
+                            display: flex;
+                            justify-content: space-between;
+
+                            @media (max-width: 1538px) {
+                                width: 63%;
+                                justify-content: space-between;
+                            }
+
+                            .button-option {
+                                width: 144px;
+                                height: 43px;
+                                border: 1.0px solid #8f8f8f;
+                                border-radius: 10.0px;
+                                cursor: pointer;
+                                text-transform: uppercase;
+                                font-size: 12px;
+                                line-height: 32px;
+                                font-weight: 700;
+                                letter-spacing: 0.005em;
+                                color: #000000;
+                                display: flex;
+                                justify-content: space-around;
+                                align-items: center;
+
+                                @media (max-width: 1538px) {
+                                    width: 114px;
+                                }
+
+                                @media (max-width: 320px) {
+                                    width: 92px;
+                                }
+
+                                .img-card-button {
+                                    width: 20px;
+                                    height: 20px;
+                                    display: flex;
+                                }
+                            }
+
+                            .button-buy {
+                                width: 94px;
+                                height: 43px;
+                                background-color: #b7b7b7;
+                                border-radius: 10.0px;
+                                border: none;
+                                cursor: pointer;
+                                text-transform: uppercase;
+                                font-size: 12px;
+                                line-height: 32px;
+                                font-weight: 700;
+                                letter-spacing: 0.005em;
+                                color: #ffffff;
+                                transition: .3s;
+
+                                @media (max-width: 320px) {
+                                    width: 65px;
+                                }
+
+                                &:hover {
+                                    background-color: #000000;
+                                    color: #fcff19;
+                                    transition: .3s;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+// contacts
+
+
+.wrap-contacts-form {
+    background: url(img/footer-bg.png);
+    width: 100%;
+    height: 634px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 497px;
+
+    @media (max-width: 537px) {
+        top: 737px;
+    }
+
+    .contacts-form {
+        width: 100%;
+        max-width: 451px;
+        height: 483px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        .contacts-form-title {
+            font-size: 28px;
+            line-height: 32px;
+            font-weight: 700;
+            letter-spacing: 0.005em;
+            color: #000000;
+            display: flex;
+            justify-content: center;
+        }
+
+        .contacts-form-subtitle {
+            font-size: 15px;
+            line-height: 32px;
+            font-weight: 400;
+            letter-spacing: 0.005em;
+            color: #000000;
+            display: flex;
+            justify-content: center;
+            margin-top: 40px;
+
+            @media (max-width: 320px) {
+                font-size: 11px;
+            }
+        }
+
+        .wrap-form {
+            width: 100%;
+            max-width: 451px;
+            height: 343px;
+            display: flex;
+            flex-direction: column;
+            margin-top: 40px;
+
+            .wrap-up-input {
+                display: flex;
+                justify-content: space-between;
+
+                @media (max-width: 425px) {
+                    flex-wrap: wrap;
+                    justify-content: center;
+                }
+
+                .form-input-name {
+                    width: 100%;
+                    max-width: 214px;
+                    height: 43px;
+                    background-color: #ffffff;
+                    border: 1.0px solid #dadada;
+                    border-radius: 10.0px;
+                    padding-left: 15px;
+                }
+
+                .form-input-surname {
+                    width: 100%;
+                    max-width: 214px;
+                    height: 43px;
+                    background-color: #ffffff;
+                    border: 1.0px solid #dadada;
+                    border-radius: 10.0px;
+                    padding-left: 15px;
+
+                    @media (max-width: 425px) {
+                        margin-top: 15px;
+                    }
+                }
+            }
+
+            .input-form-mail {
+                width: 100%;
+                max-width: 451px;
+                height: 43px;
+                background-color: #ffffff;
+                border: 1.0px solid #dadada;
+                border-radius: 10.0px;
+                margin-top: 20px;
+                padding-left: 15px;
+
+                @media (max-width: 425px) {
+                    max-width: 250px;
+                    height: 60px;
+                    align-self: center;
+                }
+            }
+
+            .input-form-message {
+                width: 100%;
+                max-width: 451px;
+                height: 153px;
+                background-color: #ffffff;
+                border: 1.0px solid #dadada;
+                border-radius: 10.0px;
+                margin-top: 18px;
+                padding-left: 15px;
+                padding-top: 15px;
+
+                @media (max-width: 425px) {
+                    max-width: 310px;
+                    align-self: center;
+                }
+            }
+
+            .button-contacts-form {
+                width: 100%;
+                max-width: 451px;
+                height: 43px;
+                background-color: #b7b7b7;
+                border-radius: 10.0px;
+                border: none;
+                margin-top: 22px;
+                font-size: 12px;
+                line-height: 32px;
+                font-weight: 700;
+                letter-spacing: 0.005em;
+                color: #ffffff;
+                text-transform: uppercase;
+                cursor: pointer;
+                transition: .3s;
+
+
+                @media (max-width: 425px) {
+                    max-width: 150px;
+                    align-self: center;
+                }
+
+                &:hover {
+                    background-color: #616161;
+                    transition: .3s;
+                }
+            }
+        }
+    }
+}
+
+
+// footer
+
+.wrap-footer {
+    background: url(img/footer_bg.svg);
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 495px;
+
+    @media (max-width: 537px) {
+        top: 735px;
+    }
+
+    .footer-left {
+        width: 50%;
+
+        .footer-left-logo {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+
+            .footer-left-wheel {
+                width: 21px;
+                height: 13px;
+            }
+
+            .footer-left-title {
+                width: 115px;
+                height: 23px;
+            }
+        }
+    }
+
+    .footer-right {
+        width: 50%;
+        display: flex;
+        justify-content: flex-start;
+
+        @media (max-width: 800px) {
+            display: none;
+        }
+
+        .footer-right-nav-items {
+            display: flex;
+            justify-content: space-evenly;
+            width: 54%;
+            min-width: 363px;
+            margin-left: 66px;
+
+            @media (max-width: 860px) {
+                margin-left: 0;
+            }
+
+            .footer-right-nav-item {
+                cursor: pointer;
+                font-size: 15px;
+                line-height: 32px;
+                font-weight: 700;
+                letter-spacing: 0.005em;
+                color: #010101;
+                text-transform: uppercase;
+            }
+        }
+    }
+}
