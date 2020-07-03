@@ -53,7 +53,6 @@ header {
 }
 
 header .logo {
-  cursor: pointer;
   width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -67,8 +66,83 @@ header .logo {
           align-items: center;
 }
 
+@media (max-width: 768px) {
+  header .logo {
+    cursor: pointer;
+  }
+}
+
 header .logo .wheel {
   margin-bottom: -10px;
+}
+
+@media (max-width: 768px) {
+  header .logo .title {
+    cursor: pointer;
+  }
+}
+
+header .layer {
+  display: none;
+  position: absolute;
+  width: 100vw;
+  height: 64vh;
+  background-color: #00000057;
+  z-index: 1;
+}
+
+header .layer .nav-mob {
+  width: 160px;
+  height: 150px;
+  position: relative;
+  z-index: 5;
+  margin-top: 345px;
+  margin-left: 95px;
+}
+
+@media (max-width: 768px) {
+  header .layer .nav-mob {
+    margin-left: 310px;
+  }
+}
+
+@media (max-width: 425px) {
+  header .layer .nav-mob {
+    margin-left: 140px;
+  }
+}
+
+@media (max-width: 375px) {
+  header .layer .nav-mob {
+    margin-left: 115px;
+  }
+}
+
+@media (max-width: 320px) {
+  header .layer .nav-mob {
+    margin-left: 95px;
+  }
+}
+
+header .layer .nav-mob .nav-mob-ul {
+  list-style-type: none;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+header .layer .nav-mob .nav-mob-ul .nav-mob-li .nav-mob-ul-into-li {
+  position: relative;
+  list-style-type: none;
+  left: 25px;
+}
+
+header .layer .nav-mob .nav-mob-ul .nav-mob-li .nav-mob-ul-into-li .nav-mob-li-into-ul-into-li {
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+header .two {
+  cursor: pointer;
 }
 
 header .wrap-nav {
@@ -1452,6 +1526,12 @@ header .wrap-nav .container-ul .container-li .into-li .into-ul {
       -ms-flex-pack: center;
           justify-content: center;
   margin-top: 40px;
+}
+
+@media (max-width: 375px) {
+  .wrap-contacts-form .contacts-form .contacts-form-subtitle {
+    font-size: 13px;
+  }
 }
 
 @media (max-width: 320px) {

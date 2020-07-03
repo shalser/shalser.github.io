@@ -47,15 +47,85 @@ header {
     align-items: center;
 
     .logo {
-        cursor: pointer;
         width: 50%;
         display: flex;
         flex-direction: column;
         align-items: center;
+        @media (max-width: 768px) {
+            cursor: pointer;
+        }
 
         .wheel {
             margin-bottom: -10px;
         }
+        .title {
+
+            @media (max-width: 768px) {
+                cursor: pointer;
+            }
+        }
+    }
+
+    .layer {
+        display: none;
+        position: absolute;
+        width: 100vw;
+        height: 64vh;
+        background-color: #00000057;
+        z-index: 1;
+        
+
+        .nav-mob {
+            width: 160px;
+            height: 150px;
+            position: relative;
+            z-index: 5;
+            margin-top: 345px;
+            margin-left: 95px;
+
+            @media (max-width: 768px) {
+                margin-left: 310px;
+            }
+
+            @media (max-width: 425px) {
+                margin-left: 140px;
+            }
+
+            @media (max-width: 375px) {
+                margin-left: 115px;
+            }
+
+            @media (max-width: 320px) {
+                margin-left: 95px;
+            }
+
+
+            .nav-mob-ul {
+                list-style-type: none;
+                color: #ffffff;
+                text-transform: uppercase;
+
+                .nav-mob-li {
+
+
+                    .nav-mob-ul-into-li {
+
+                        position: relative;
+                        list-style-type: none;
+                        left: 25px;
+
+                        .nav-mob-li-into-ul-into-li {
+                            cursor: pointer;
+                            text-transform: uppercase;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .two {
+        cursor: pointer;
     }
 
     .wrap-nav {
@@ -475,7 +545,7 @@ header {
                             background-size: contain;
                         }
 
-                        
+
 
                         .card-2-title {
                             font-size: 15px;
@@ -590,7 +660,7 @@ header {
                             background-size: contain;
                         }
 
-                        
+
 
                         .card-3-title {
                             font-size: 15px;
@@ -713,7 +783,7 @@ header {
                             height: 261px;
                             background-size: cover;
                         }
-                        
+
                     }
 
                     .card-wrap {
@@ -1174,6 +1244,10 @@ header {
             display: flex;
             justify-content: center;
             margin-top: 40px;
+
+            @media (max-width: 375px) {
+                font-size: 13px;
+            }
 
             @media (max-width: 320px) {
                 font-size: 11px;
