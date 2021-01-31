@@ -20,7 +20,8 @@
     "del": "^3.0.0",
     "gulp": "^4.0.2",
     "http-server": "^0.12.3",
-    "save-dev": "0.0.1-security"
+    "save-dev": "0.0.1-security",
+    "axios": ">=0.21.1"
   },
   "devDependencies": {
     "browser-sync": "^2.26.3",
